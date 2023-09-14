@@ -7953,7 +7953,7 @@ body {
 	Main
 --------------------------- */
 .banner {
-	background: url(/assets/images/banner.jpg) no-repeat 50% 50%;
+	background: url(../../assets/images/banner.jpg) no-repeat 50% 50%;
 	background-size: cover;
 }
 .banner::before {
