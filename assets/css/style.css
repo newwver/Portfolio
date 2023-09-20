@@ -6993,7 +6993,7 @@ body {
 	}
 }
 .slide .content span.subtitle {
-	font-size: 17px;
+	font-size: 16px;
 	color: var(--color-white-75);
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -7327,11 +7327,16 @@ body {
 }
 .slide.type-3 .slider-info .user-info-top .user-info-footer .info img {
 	color: var(--color-primary);
-	margin-right: 12px;
+	margin-right: 10px;
 }
 .slide.type-3 .slider-info .user-info-top .user-info-footer .info span {
 	color: var(--color-lightn);
 	font-size: 16px;
+}
+.slide.type-3 .slider-info .user-info-top .user-info-footer .info a:hover span {
+    display: inline-block;
+	color: var(--color-primary);
+    transition: all 0.25s ease;
 }
 .slide.type-3 .slider-info .user-info-bottom {
 	border-radius: 0 0 10px 10px;
