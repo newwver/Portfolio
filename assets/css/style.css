@@ -7107,7 +7107,7 @@ body {
 	vertical-align: middle;
 	max-width: 240px;
 	height: auto;
-	border-radius: 12rem;
+	border-radius: 11rem;
 	filter: blur(0.35px);
 }
 .slide .preview.box-gradient::before {
@@ -7334,9 +7334,9 @@ body {
 	font-size: 16px;
 }
 .slide.type-3 .slider-info .user-info-top .user-info-footer .info a:hover span {
-    display: inline-block;
+	display: inline-block;
 	color: var(--color-primary);
-    transition: all 0.25s ease;
+	transition: all 0.25s ease;
 }
 .slide.type-3 .slider-info .user-info-bottom {
 	border-radius: 0 0 10px 10px;
