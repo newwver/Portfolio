@@ -7,7 +7,7 @@
 	--color-tertiary: #0d1013;
 	--color-gray: #f6f6f6;
 	--color-subtitle: #03e4fb;
-	--background-color-1: linear-gradient(to right bottom, #0a1729, #0d182f);
+	--background-color-1: linear-gradient(to right bottom, #060f2c, #081833);
 	--background-color-2: #1e252e;
 	--shadow-1: 6px 6px 14px rgb(32 52 81 / 25%), -6px -5px 14px rgb(46 75 118 / 25%);
 	--shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
@@ -6455,7 +6455,7 @@ input[type='submit']:hover {
 	}
 }
 body {
-	background-color: #0d1623;
+	background-color: #041121;
 }
 
 .nav-pills .nav-link.active,
@@ -6695,7 +6695,7 @@ body {
 }
 
 .sec-header.header--fixed.sticky {
-	background-color: rgba(16, 28, 44, 0.65);
+	background-color: rgba(4, 17, 33, 0.7);
 	box-shadow: var(--shadow-1);
 	position: fixed;
 	backdrop-filter: blur(5px);
