@@ -8640,8 +8640,12 @@ button.close {
 @media only screen and (max-width: 575px) {
 	.modal .modal-dialog .modal-content .modal-body .text-content h3 {
 		font-size: 23px;
+		margin-bottom: 25px;
 	}
-	.modal .modal-dialog .modal-content .modal-body .text-content p,
+	.modal .modal-dialog .modal-content .modal-body .text-content p {
+		font-size: 15px;
+		margin-bottom: 20px !important;
+	}
 	.modal .modal-dialog .modal-content .modal-body .text-content * {
 		font-size: 15px;
 	}
