@@ -8530,7 +8530,7 @@ body.modal-open {
 	overflow: hidden;
 	border: none;
 	z-index: 1;
-	background: #081422;
+	background: #041121;
 	box-shadow: var(--shadow-1);
 }
 button.close {
@@ -8599,7 +8599,7 @@ button.close {
 	padding-left: 2rem;
 } */
 .modal .modal-dialog .modal-content .modal-body .text-content h3 {
-	margin-bottom: 20px;
+	margin-bottom: 45px;
 	font-size: 34px;
 	font-weight: 700;
 	color: var(--color-lightn);
@@ -8635,6 +8635,15 @@ button.close {
 	.modal .modal-dialog .modal-content .modal-body .text-content {
 		margin-top: 30px;
 		padding: 0;
+	}
+}
+@media only screen and (max-width: 575px) {
+	.modal .modal-dialog .modal-content .modal-body .text-content h3 {
+		font-size: 23px;
+	}
+	.modal .modal-dialog .modal-content .modal-body .text-content p,
+	.modal .modal-dialog .modal-content .modal-body .text-content * {
+		font-size: 15px;
 	}
 }
 .modal .modal-dialog .modal-content .modal-body .text-content a svg {
