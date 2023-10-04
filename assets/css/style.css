@@ -6845,7 +6845,7 @@ body {
 }
 .seperator::after {
 	position: absolute;
-	max-width: 1300px;
+	max-width: 1320px;
 	height: 1px;
 	background: #1d2e37;
 	content: '';
