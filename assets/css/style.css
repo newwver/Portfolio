@@ -7713,7 +7713,7 @@ body {
 }
 
 /*---------------------
-    Skill
+    TRAINING
 ---------------------*/
 @media only screen and (max-width: 479px) {
 	.section-title.text-center span.subtitle {
@@ -8097,14 +8097,14 @@ body {
 }
 .icon.svg-kcci {
 	display: block;
-	width: 335px;
+	width: 300px;
 	height: 75px;
 	background: url(../../assets/images/logo/kcci_logo.svg) 50% 50% no-repeat;
 	background-size: contain;
 }
 .icon.svg-dl {
 	display: block;
-	width: 330px;
+	width: 300px;
 	height: 75px;
 	background: url(../../assets/images/logo/dl_logo.svg) 50% 50% no-repeat;
 	background-size: contain;
@@ -8118,7 +8118,7 @@ body {
 }
 .icon.svg-kfi {
 	display: block;
-	width: 320px;
+	width: 300px;
 	height: 100px;
 	background: url(../../assets/images/logo/kfi_logo.svg) 50% 50% no-repeat;
 	background-size: contain;
@@ -8282,7 +8282,7 @@ body {
 	height: 50px;
 	line-height: 46px;
 	border-radius: 50%;
-	background-color: #222e40;
+	background-color: #041121;
 	text-align: center;
 	z-index: 999 !important;
 	box-shadow: 5px 5px 15px #2b2f36, -5px -5px 15px #282f38;
@@ -8304,7 +8304,7 @@ body {
 	border-radius: 50%;
 	top: 0;
 	left: 0;
-	background: linear-gradient(to right bottom, #263951, #19243c);
+	background: linear-gradient(to right bottom, #07183d, #19243c);
 	opacity: 0;
 	z-index: -1;
 }
@@ -8316,6 +8316,10 @@ body {
 	height: 27px;
 	position: relative;
 	z-index: 1;
+}
+
+.go-top div:hover svg {
+	color: var(--color-primary);
 }
 
 .text-color-primary {
@@ -8740,4 +8744,134 @@ button.close {
 .modal .carousel .carousel-inner img {
 	max-width: 100%;
 	height: auto;
+}
+
+/* gradient-border */
+.sec-feature {
+	display: flex;
+	margin-top: clamp(30px, 7vw, 80px);
+	justify-content: center;
+}
+.sec-feature.second {
+	margin-top: -70px;
+}
+.slider-style-5 {
+	margin: auto;
+	max-width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	padding-top: 105px;
+	display: flex;
+	flex-direction: column;
+}
+.slider-style-5 .thumbnail {
+	padding: 8px;
+	display: inline-block;
+}
+.slider-style-5 .thumbnail p {
+	border-radius: 50%;
+	height: auto;
+	width: 280px;
+	height: 280px;
+	border: 5px solid #32363b;
+}
+.slider-style-5 .thumbnail.gradient-border p {
+	border: none;
+	background-size: 400% 400%;
+	background: #041121;
+}
+.slider-style-5 .thumbnail.gradient-animation p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	animation: gradient 3s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.gradient-border {
+	--borderWidth: 3px;
+	background: transparent;
+	position: relative;
+	border-radius: 50%;
+}
+
+.gradient-border:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	border-radius: 50%;
+	z-index: -1;
+	animation: animatedgradient 2s ease alternate infinite;
+	background-size: 300% 300%;
+	transform: translate(-50%, -50%);
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.gradient-border:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+	border-radius: 50%;
+	z-index: -1;
+	animation: animatedgradient 2s ease alternate infinite;
+	background-size: 300% 300%;
+	transform: translate(-50%, -50%);
+}
+.gradient-border.second.thumbnail {
+	margin-left: -30px;
+}
+.gradient-border.third.thumbnail {
+	margin-left: -30px;
+}
+@media only screen and (max-width: 1199px) {
+	.slider-style-5 .thumbnail p {
+		width: clamp(110px, 27vw, 300px);
+		height: clamp(110px, 27vw, 300px);
+	}
+	.slider-style-5 .thumbnail {
+		padding: 6px;
+	}
+	.slider-style-5 .thumbnail.gradient-animation p {
+		font-size: clamp(16px, 3.8vw, 26px);
+	}
+	.gradient-border.third.thumbnail {
+		margin-left: 0;
+		margin-top: -70px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.sec-feature.second {
+		margin-top: -7vw;
+	}
 }
