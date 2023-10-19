@@ -24,6 +24,7 @@
 			this.initializeGoTop();
 			this.enableStickyHeader();
 			this.enableSmoothScroll();
+			this.blogActivation();
 			this.activateWOW();
 			this.activateAOS();
 			this.pageNavigation();
@@ -84,6 +85,20 @@
 					headerSticky.classList.toggle('sticky', this.window.scrollY > 30);
 				}.bind(this)
 			);
+		},
+
+		blogActivation: function () {
+			$('.blog-activation').slick({
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true,
+				arrows: true,
+				adaptiveHeight: true,
+				cssEase: 'linear',
+				prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
+				nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
+			});
 		},
 
 		activateAOS: function () {
