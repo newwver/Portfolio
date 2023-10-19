@@ -8865,6 +8865,10 @@ button.close {
 		max-height: 250px;
 		overflow: hidden;
 	}
+	.blog .inner .external-text,
+	.blog .inner .blog-desc .description {
+		font-size: 16px;
+	}
 }
 @media only screen and (max-width: 479px) {
 	.blog .inner .blog-info {
