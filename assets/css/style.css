@@ -6368,6 +6368,10 @@ input[type='submit']:hover {
 	cursor: pointer;
 }
 
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
 @media only screen and (min-width: 768px) {
 	.change-text {
 		font-size: 4.4rem;
@@ -8509,6 +8513,14 @@ button.close {
 .modal .modal-dialog .modal-content .modal-header .close:hover span {
 	color: var(--color-primary);
 }
+.modal .modal-dialog .modal-content .modal-body .modal-feat-img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3.8rem;
+	border-radius: 10px;
+	vertical-align: middle;
+}
 .modal .modal-dialog .modal-content .modal-body .text-content h3 {
 	margin-bottom: 45px;
 	font-size: 34px;
@@ -8538,14 +8550,18 @@ button.close {
 }
 .modal .modal-dialog .modal-content .modal-body .text-content ul li {
 	color: #b5bac3;
+	word-break: keep-all;
 }
 .modal .modal-dialog .modal-content .modal-body .text-content p:nth-child(1) {
 	margin-bottom: 30px;
 }
 @media screen and (max-width: 991px) {
 	.modal .modal-dialog .modal-content .modal-body .text-content {
-		margin-top: 30px;
+		/* margin-top: 30px; */
 		padding: 0;
+	}
+	.modal .modal-dialog .modal-content .modal-body .text-content h5 {
+		font-size: 23px;
 	}
 }
 @media only screen and (max-width: 575px) {
