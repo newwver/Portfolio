@@ -8646,19 +8646,19 @@ button.close {
 	padding: 8px;
 	display: inline-block;
 }
-.type-7 .thumbnail p {
+.type-7 .thumbnail a {
 	border-radius: 50%;
 	height: auto;
 	width: 260px;
 	height: 260px;
 	border: 5px solid #32363b;
 }
-.type-7 .thumbnail.gradient-border p {
+.type-7 .thumbnail.gradient-border a {
 	border: none;
 	background-size: 400% 400%;
 	background: #041121;
 }
-.type-7 .thumbnail.gradient-animation p {
+.type-7 .thumbnail.gradient-animation a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -8666,6 +8666,10 @@ button.close {
 	font-size: 28px;
 	font-weight: 600;
 	animation: gradient 3s ease infinite;
+}
+.type-7 .thumbnail.gradient-animation a:hover {
+	background: rgb(4 17 33 / 70%);
+	transition: all 0.3s;
 }
 @keyframes gradient {
 	0% {
@@ -8728,14 +8732,14 @@ button.close {
 	margin-left: -20px;
 }
 @media only screen and (max-width: 1199px) {
-	.type-7 .thumbnail p {
+	.type-7 .thumbnail a {
 		width: clamp(110px, 27vw, 300px);
 		height: clamp(110px, 27vw, 300px);
 	}
 	.type-7 .thumbnail {
 		padding: 6px;
 	}
-	.type-7 .thumbnail.gradient-animation p {
+	.type-7 .thumbnail.gradient-animation a {
 		font-size: clamp(16px, 3.8vw, 26px);
 	}
 	.gradient-border.third.thumbnail {
