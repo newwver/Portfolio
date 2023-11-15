@@ -7751,8 +7751,9 @@ body {
 .sec-training .training-center .training-title {
 	margin-top: 10px;
 	font-size: 23px;
-	color: var(--color-lightn);
 	font-weight: 500;
+	font-family: var(--font-primary);
+	color: var(--color-lightn);
 	margin-bottom: 12px;
 }
 .sec-training:hover .training-center .training-title {
@@ -8997,6 +8998,7 @@ button.close {
 	color: #c4cfde;
 	word-break: keep-all;
 	line-height: 1.4;
+	font-family: var(--font-primary);
 }
 @media only screen and (max-width: 767px) {
 	.blog .inner .blog-desc .title-area .title-info .title {
