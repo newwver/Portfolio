@@ -5223,10 +5223,6 @@ a:active {
 	color: var(--color-primary);
 }
 
-a:focus {
-	outline: none;
-}
-
 address {
 	margin: 0 0 24px;
 }
@@ -8841,6 +8837,9 @@ button.close {
 	margin-top: 45px;
 	font-size: 18px;
 	line-height: 30px;
+}
+.blog .inner .blog-desc .description a {
+	display: block;
 }
 .blog .inner .blog-desc .seperator {
 	position: relative;
