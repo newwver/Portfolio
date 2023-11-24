@@ -5223,6 +5223,10 @@ a:active {
 	color: var(--color-primary);
 }
 
+a:focus {
+	outline: none;
+}
+
 address {
 	margin: 0 0 24px;
 }
@@ -8552,9 +8556,6 @@ button.close {
 .modal .modal-dialog .modal-content .modal-body .text-content p:nth-child(1) {
 	margin-bottom: 30px;
 }
-.modal.feature .modal-dialog .modal-content .modal-body .text-content ul li + li {
-	margin-top: 30px;
-}
 @media screen and (max-width: 991px) {
 	.modal .modal-dialog .modal-content .modal-body .text-content {
 		/* margin-top: 30px; */
@@ -8575,9 +8576,6 @@ button.close {
 	}
 	.modal .modal-dialog .modal-content .modal-body .text-content * {
 		font-size: 15px;
-	}
-	.modal.feature .modal-dialog .modal-content .modal-body .text-content ul li + li {
-		margin-top: 20px;
 	}
 }
 .modal .modal-dialog .modal-content .modal-body .text-content a svg {
@@ -8838,9 +8836,6 @@ button.close {
 	font-size: 18px;
 	line-height: 30px;
 }
-.blog .inner .blog-desc .description a {
-	display: block;
-}
 .blog .inner .blog-desc .seperator {
 	position: relative;
 }
@@ -9003,7 +8998,6 @@ button.close {
 	color: #c4cfde;
 	word-break: keep-all;
 	line-height: 1.4;
-	font-family: var(--font-primary);
 }
 @media only screen and (max-width: 767px) {
 	.blog .inner .blog-desc .title-area .title-info .title {
