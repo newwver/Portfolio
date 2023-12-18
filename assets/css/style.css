@@ -7118,8 +7118,7 @@ body {
 .slide .preview .preview-inner img {
 	border: 0;
 	vertical-align: middle;
-	width: 100%;
-	max-width: 240px;
+	width: 240px;
 	height: auto;
 	border-radius: 3rem;
 }
@@ -7157,7 +7156,7 @@ body {
 		transform: scale(1);
 	}
 	.slide .preview .preview-inner img {
-		max-width: 220px;
+		width: 220px;
 	}
 }
 .slide.type-1 .content {
