@@ -7343,6 +7343,7 @@ body {
 .slide.type-3 .slider-info .user-info-top .user-info-footer .info img {
 	color: var(--color-primary);
 	margin-right: 10px;
+	width: 24px;
 }
 .slide.type-3 .slider-info .user-info-top .user-info-footer .info span {
 	color: var(--color-lightn);
@@ -8556,7 +8557,7 @@ button.close {
 }
 .modal .modal-dialog .modal-content .modal-body .text-content b {
 	display: block;
-	color: var(--color-lightn);
+	color: #ecf3fb;
 }
 .modal .modal-dialog .modal-content .modal-body .text-content ul li {
 	color: #b5bac3;
@@ -8741,6 +8742,9 @@ button.close {
 .gradient-border.second.thumbnail {
 	margin-left: -20px;
 }
+.other-list li {
+	margin-bottom: 20px;
+}
 @media only screen and (max-width: 1199px) {
 	.type-7 .thumbnail a {
 		width: clamp(110px, 27vw, 300px);
@@ -8762,6 +8766,7 @@ button.close {
 		margin-top: -7vw;
 	}
 }
+
 /*---------------------------
     Blog
 -----------------------------*/
