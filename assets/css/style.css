@@ -100,30 +100,35 @@ body {
 	font-family: 'NotoSansKR';
 	font-weight: 300;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/NotoSansKR-Light.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'NotoSansKR';
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/NotoSansKR-Regular.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'NotoSansKR';
 	font-weight: 600;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'NotoSansKR';
 	font-weight: 700;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/NotoSansKR-Bold.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'NotoSansKR';
 	font-weight: 800;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/NotoSansKR-Black.woff2') format('woff2');
 }
 
@@ -134,30 +139,35 @@ body {
 	font-family: 'Roboto';
 	font-weight: 100;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/Roboto-Thin.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Roboto';
 	font-weight: 300;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/Roboto-Light.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Roboto';
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/Roboto-Regular.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Roboto';
 	font-weight: 600;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/Roboto-Medium.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Roboto';
 	font-weight: 700;
 	font-style: normal;
+	font-display: swap;
 	src: url('../fonts/Roboto-Bold.woff2') format('woff2');
 }
 
@@ -7108,6 +7118,7 @@ body {
 .slide .preview .preview-inner img {
 	border: 0;
 	vertical-align: middle;
+	width: 100%;
 	max-width: 240px;
 	height: auto;
 	border-radius: 3rem;
@@ -7490,7 +7501,6 @@ body {
 	width: 400px;
 	height: 200px;
 	color: white;
-	font-family: 'Raleway';
 	font-size: 2.5rem;
 }
 
@@ -8425,7 +8435,7 @@ body {
 -----------------------------*/
 .modal {
 	z-index: 99999999;
-	background: rgb(6 13 23 / 70%);
+	background: rgb(6 13 23 / 60%);
 	padding: 60px 15px !important;
 }
 body.modal-open {
@@ -8664,7 +8674,7 @@ button.close {
 	align-items: center;
 	justify-content: center;
 	color: #fff;
-	font-size: 28px;
+	font-size: 25px;
 	font-weight: 600;
 	animation: gradient 3s ease infinite;
 }
