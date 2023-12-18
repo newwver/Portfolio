@@ -7801,7 +7801,7 @@ body {
 .progress-charts + .progress-charts {
 	margin-top: 30px;
 }
-.progress-charts h6.heading {
+.progress-charts .heading {
 	margin-bottom: 7px;
 	color: var(--color-light);
 	font-size: 12px;
@@ -7810,7 +7810,7 @@ body {
 	margin-top: 15px;
 	font-weight: 300;
 }
-.progress-charts h6.heading span.percent-label {
+.progress-charts .heading span.percent-label {
 	color: #c3cedd;
 	font-size: 12px;
 	text-transform: uppercase;
