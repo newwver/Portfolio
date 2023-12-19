@@ -7113,12 +7113,11 @@ body {
 	box-shadow: -1px 1px 15px 10px #1f374f78;
 	border-radius: 5rem;
 	padding: 30px;
-	transform: scale(1.1);
 }
 .slide .preview .preview-inner img {
 	border: 0;
 	vertical-align: middle;
-	width: 240px;
+	width: 265px;
 	height: auto;
 	border-radius: 3rem;
 }
@@ -8642,6 +8641,7 @@ button.close {
 }
 .sec-feature.second {
 	margin-top: -60px;
+	margin-bottom: clamp(30px, 7vw, 80px);
 }
 .type-7 {
 	margin: auto;
