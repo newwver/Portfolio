@@ -7151,9 +7151,6 @@ body {
 	}
 }
 @media only screen and (max-width: 479px) {
-	.slide .preview .preview-inner {
-		transform: scale(1);
-	}
 	.slide .preview .preview-inner img {
 		width: 220px;
 	}
