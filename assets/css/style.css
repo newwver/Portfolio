@@ -7883,8 +7883,7 @@ body {
 /*---------------------------
     Portfolio
 -----------------------------*/
-.sec-portfolio,
-.sec-more {
+.sec-portfolio {
 	text-align: left;
 	padding: 30px;
 	border-radius: 15px;
@@ -7896,7 +7895,7 @@ body {
 	height: 100%;
 	transition: 0.5s all ease-in-out;
 	display: inline-block;
-	cursor: default;
+	cursor: pointer;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.container {
