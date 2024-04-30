@@ -7111,15 +7111,16 @@ body {
 .slide .preview .preview-inner {
 	text-align: center;
 	box-shadow: -1px 1px 15px 10px #1f374f78;
-	border-radius: 5rem;
-	padding: 30px;
+	border-radius: 2rem;
+	max-height: 310px;
+	overflow: hidden;
 }
 .slide .preview .preview-inner img {
 	border: 0;
 	vertical-align: middle;
-	width: 265px;
+	width: 275px;
 	height: auto;
-	border-radius: 3rem;
+	transform: translate(0px, -10px);
 }
 .slide .preview.box-gradient::before {
 	width: 100%;
@@ -7152,7 +7153,8 @@ body {
 }
 @media only screen and (max-width: 479px) {
 	.slide .preview .preview-inner img {
-		width: 220px;
+		width: 230px;
+		transform: none;
 	}
 }
 .slide.type-1 .content {
