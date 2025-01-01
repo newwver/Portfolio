@@ -4,9 +4,9 @@ jQuery(document).ready(function ($) {
 	function animateText($element) {
 		var nextElement = getNextElement($element);
 
-		$element.parents('.change-text-wrap').animate({ width: '2px' }, 600, function () {
+		$element.parents('.change-text-wrap').animate({ width: '2px' }, 500, function () {
 			toggleVisibility($element, nextElement);
-			$(this).animate({ width: nextElement.width() + 10 }, 600, function () {
+			$(this).animate({ width: nextElement.width() + 10 }, 500, function () {
 				setTimeout(function () {
 					animateText(nextElement);
 				}, animationDuration);
