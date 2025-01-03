@@ -6926,7 +6926,7 @@ body {
 	list-style: none;
 	padding-left: 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 450px) {
 	.header-wrap {
 		justify-content: center;
 		text-align: center;
@@ -6942,6 +6942,7 @@ body {
 	}
 	.home-inner {
 		min-width: auto;
+		width: 100%;
 	}
 }
 .header-content li {
@@ -7113,6 +7114,7 @@ body {
     box-shadow: -1px 1px 15px 10px #1f374f78;
     border-radius: 10.5rem;
     max-height: 320px;
+	min-height: 310px;
     overflow: hidden;
     background: linear-gradient(135deg, #ffffff, #f9f9f9);
 }
@@ -8674,11 +8676,13 @@ button.close {
 	color: #fff;
 	font-size: 25px;
 	font-weight: 600;
+	transform: scale(1);
+    transition: all 0.3s;
 	animation: gradient 3s ease infinite;
 }
 .type-7 .thumbnail.gradient-animation a:hover {
 	background: rgb(4 17 33 / 70%);
-	transition: all 0.3s;
+	transform: scale(1.02);
 }
 @keyframes gradient {
 	0% {
@@ -8745,14 +8749,14 @@ button.close {
 }
 @media only screen and (max-width: 1199px) {
 	.type-7 .thumbnail a {
-		width: clamp(110px, 27vw, 300px);
-		height: clamp(110px, 27vw, 300px);
+		width: clamp(110px, 27vw, 260px);
+		height: clamp(110px, 27vw, 260px);
 	}
 	.type-7 .thumbnail {
 		padding: 6px;
 	}
 	.type-7 .thumbnail.gradient-animation a {
-		font-size: clamp(16px, 3.8vw, 26px);
+		font-size: clamp(14px, 3vw, 26px);
 	}
 	.gradient-border.third.thumbnail {
 		margin-left: 0;
