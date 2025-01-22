@@ -7778,7 +7778,7 @@ body {
 .sec-training .training-center .subtitle {
 	margin-top: 15px;
 	margin-bottom: 2px;
-	font-size: 20px;
+	font-size: 18px;
 	color: var(--color-lightn);
 	font-weight: 400;
 	margin-bottom: 7px;
@@ -7899,7 +7899,6 @@ body {
 	height: 100%;
 	transition: 0.5s all ease-in-out;
 	display: inline-block;
-	cursor: pointer;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.container {
