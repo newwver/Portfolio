@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-	var animationDuration = 2500;
+	var animationDuration = 2000;
 
 	function animateText($element) {
 		var nextElement = getNextElement($element);
