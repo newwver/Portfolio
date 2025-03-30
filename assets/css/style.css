@@ -8537,7 +8537,7 @@ button.close {
 	vertical-align: middle;
 }
 .modal .modal-dialog .modal-content .modal-body .text-content h3 {
-	margin-bottom: 45px;
+	margin-bottom: 40px;
 	font-size: 34px;
 	font-weight: 700;
 	color: var(--color-lightn);

@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://newwver.github.io/Portfolio//">
     <meta property="og:image" content="assets/images/profile2.webp">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" async>
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/lib/slick.css">
     <link rel="stylesheet" href="assets/css/lib/slick-theme.css">
     <link rel="stylesheet" href="assets/css/lib/aos.css">
@@ -80,7 +80,7 @@
                     <div
                         class="content d-flex col-lg-4 justify-content-center justify-content-lg-start mt_md--80 mt_sm--70">
                         <div class="home-inner px-4 px-md-0 text-center text-lg-start">
-                            <span class="subtitle">안녕하세요. <br class="d-md-none d-block">저의 여정을 소개하는 경력 기술서입니다.</span>
+                            <span class="subtitle">안녕하세요. <br class="d-md-none d-block">주요 프로젝트 중심의 실무 기록입니다.</span>
                             <h1 class="title mb--0">
                                 <span class="header-caption" id="page-top">
                                     <span class="change-text clip">
@@ -109,47 +109,6 @@
         </div>
         <!-- [e] Home -->
 
-        <!-- [s] Features -->
-        <!-- <div class="bumper seperator type-7" id="feature">
-            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
-                class="section-title text-center">
-                <span class="subtitle">What I Do</span>
-                <h2 class="title">Features</h2>
-            </div>
-            <div class="container">
-                <div class="sec-feature">
-                    <div class="thumbnail gradient-border gradient-animation cursor-pointer" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <a title="상세보기" href="javascript:void(0);" aria-label="상세보기" data-aos-once="true"
-                            data-bs-toggle="modal" data-bs-target="#Business">Business</a>
-                    </div>
-                    <div class="thumbnail gradient-border gradient-animation second cursor-pointer" data-aos="fade-up"
-                        data-aos-delay="500">
-                        <a title="상세보기" href="javascript:void(0);" aria-label="상세보기" data-aos-once="true"
-                            data-bs-toggle="modal" data-bs-target="#UserExp">UX Insight</a>
-                    </div>
-                    <div class="thumbnail gradient-border gradient-animation second cursor-pointer" data-aos="fade-up"
-                        data-aos-delay="700">
-                        <a title="상세보기" href="javascript:void(0);" aria-label="상세보기" data-aos-once="true"
-                            data-bs-toggle="modal" data-bs-target="#Tech">Technology</a>
-                    </div>
-                </div>
-                <div class="sec-feature second">
-                    <div class="thumbnail gradient-border gradient-animation cursor-pointer" data-aos="fade-up"
-                        data-aos-delay="500">
-                        <a title="상세보기" href="javascript:void(0);" aria-label="상세보기" data-aos-once="true"
-                            data-bs-toggle="modal" data-bs-target="#Communication">Communication</a>
-                    </div>
-                    <div class="thumbnail gradient-border gradient-animation second cursor-pointer" data-aos="fade-up"
-                        data-aos-delay="700">
-                        <a title="상세보기" href="javascript:void(0);" aria-label="상세보기" data-aos-once="true"
-                            data-bs-toggle="modal" data-bs-target="#Data">Data-Driven</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- [e] Features -->
-
         <!-- [s] Portfolio -->
         <div class="bumper seperator" id="project">
             <div class="container">
@@ -164,7 +123,7 @@
                     <!-- [s] 대한통운 CBE 구축 -->
                     <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#cjCbe">
+                        <div class="sec-portfolio" data-id="cjCbe" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기">
@@ -205,7 +164,7 @@
                     <!-- [s] 대한통운 방문예약시스템 -->
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#checkIn">
+                        <div class="sec-portfolio" data-id="checkIn" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기">
@@ -246,7 +205,7 @@
                     <!-- [s] 대한통운 Data Asset -->
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#dataAsset">
+                        <div class="sec-portfolio" data-id="dataAsset" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기">
@@ -287,7 +246,7 @@
                     <!-- [s] 교보리얼코 MIS -->
                     <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#kyoboRealco01">
+                        <div class="sec-portfolio" data-id="kyoboRealco01" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner cursor-pointer">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기">
@@ -328,7 +287,7 @@
                     <!-- [s] 대한상공회의소 -->
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#kcciUi">
+                        <div class="sec-portfolio" data-id="kcciUi" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);" title="프로젝트 상세보기">
@@ -368,7 +327,7 @@
                     <!-- [s] 교보리얼코 KPMS -->
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#kyoboRealco02">
+                        <div class="sec-portfolio" data-id="kyoboRealco02" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner cursor-pointer">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기">
@@ -406,7 +365,7 @@
                     <!-- [s] 대한통운 APOLO-D -->
                     <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#cjLogistics03">
+                        <div class="sec-portfolio" data-id="cjLogistics03" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner cursor-pointer">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기">
@@ -446,7 +405,7 @@
                     <!-- [s] DL건설 노무관리 -->
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#daelim">
+                        <div class="sec-portfolio" data-id="daelim" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기">
@@ -484,7 +443,7 @@
                     <!-- [s] 대한통운 Q-bridge -->
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#cjLogistics02">
+                        <div class="sec-portfolio" data-id="cjLogistics02" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기">
@@ -524,7 +483,7 @@
                     <!-- [s] 샤넬코리아 -->
                     <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#chanelStore">
+                        <div class="sec-portfolio" data-id="chanelStore" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기">
@@ -564,7 +523,7 @@
                     <!-- [s] KFI소방산업기술원 -->
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#kfiSys">
+                        <div class="sec-portfolio" data-id="kfiSys" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);" aria-label="상세보기"
@@ -607,7 +566,7 @@
                     <!-- [s] 대한통운 Visibility -->
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#cjLogistics01">
+                        <div class="sec-portfolio" data-id="cjLogistics01" data-bs-toggle="modal" data-bs-target="#projectModal">                            
                             <div class="inner cursor-pointer">
                                 <div class="preview">
                                     <a href="javascript:void(0);">
@@ -647,7 +606,7 @@
                     <!-- [s] 핫트랙스 -->
                     <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio" data-bs-toggle="modal" data-bs-target="#hottProj">
+                        <div class="sec-portfolio" data-id="hottProj" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);">
@@ -1031,1081 +990,115 @@
             This portfolio was created for non-commercial purposes.
         </p>
 
-        <!-- [s] Modal-Feature Business -->
-        <div class="modal feature fade" id="Business" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- [s] Modal Template -->
+        <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h5>Business (비즈니스 역량)</h5>
-                            <ul class="other-list">
-                                <li>
-                                    <b>경영학 전공</b>
-                                    <span>
-                                        유통&middot;물류 및 경영학을 전공하며 물류와 유통 관리, 마케팅 전략, 조직 행동 등 비즈니스 전반의 원리를 이해했습니다. 
-                                        이를 통해 비즈니스 전략과 의사결정을 위한 기본 지식을 쌓아, 프로젝트 관리와 팀 조율 시 비즈니스 관점을 적용할 수 있는 역량을 보유하고 있습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>프로젝트 관리 경험</b>
-                                    <span>
-                                        다수의 프로젝트에서 한 파트를 리드하며 일정 조율, 목표 설정, 팀원 간의 협업을 이끌어 왔습니다. 이러한 경험은 PM으로서 프로젝트의 목표를 달성하고, 팀원 간의 의견을 조율하며 일정을 관리하는 데 필요한 리더십과 조직적 사고를 발휘할 수 있는 기반이 됩니다.
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i data-feather="x"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-content-area"></div>
                 </div>
             </div>
-        </div>
-        <!-- [e] Modal-Feature Business -->
-
-        <!-- [s] Modal-Feature UX -->
-        <div class="modal feature fade" id="UserExp" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h5>User Experience Insight (사용자 경험 이해)</h5>
-                            <ul class="other-list">
-                                <li>
-                                    <b>사용자 중심 사고</b>
-                                    <span>
-                                        서비스 페르소나를 정의하고, 사용자 요구사항을 반영한 화면 설계를 진행했습니다. 
-                                        이러한 경험은 사용자 니즈를 깊이 이해하고, 이를 제품에 반영하여 최적의 사용자 경험을 제공하는 PM의 핵심 역량을 보여줍니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>시나리오 테스트 경험</b>
-                                    <span>
-                                        QA 직무를 수행하면서 User Story를 기반으로 UAT를 진행한 경험이 있습니다.
-                                        사용자 행동을 모의 시뮬레이션하며 기능을 테스트하였고, 이를 통해 사용자 요구사항 및 결함을 식별하여 개선하는 작업을 진행했습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <!-- [e] Modal-Feature UX -->
-
-        <!-- [s] Modal-Feature Tech -->
-        <div class="modal feature fade" id="Tech" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h5>Technology (기술 역량)</h5>
-                            <ul class="other-list">
-                                <li>
-                                    <b>화면 구현 경험</b>
-                                    <span>
-                                        다양한 브라우저 및 디바이스 환경에서 일관된 사용자 경험을 제공하기 위해 적응형/반응형 작업을 진행한 경험이 있습니다. 
-                                        이를 통해 모바일 환경과 사용자 경험을 고려한 제품 설계 및 개발에 대한 깊은 이해를 보유하고 있습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>협업 도구 및 버전 관리</b>
-                                    <span>
-                                        SVN, Git을 활용하여 팀과 협업하고, 버전 관리를 수행하는 데 익숙합니다.
-                                        소스 코드의 변경 내역을 추적하고 관리하여 협업을 효율적으로 진행한 경험이 있습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal-Feature Tech -->
-
-        <!-- [s] Modal-Feature Communication -->
-        <div class="modal feature fade" id="Communication" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h5>Communication (커뮤니케이션 및 협업 역량)</h5>
-                            <ul class="other-list">
-                                <li>
-                                    <b>팀과 이해관계자 간의 협업 경험</b>
-                                    <span>
-                                        기획, 디자인, 개발팀 간의 중간 역할을 수행하며 다양한 직군의 이해관계자들과 소통하고 의견을 조율해 프로젝트를 성공적으로 완수했습니다. 이러한 경험은 PM으로서 다양한 부서 간 협업을 이끌어내는 데 중요한 자산입니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>문제 해결을 위한 주도적 태도</b>
-                                    <span>
-                                        프로젝트 진행 중 발생한 이슈를 분석하고, 적절한 해결책을 직접 실행하며 프로젝트의 원활한 진행에 기여한 경험이 있습니다. 이는 PM으로서의 문제 해결 능력과 실행력을 증명합니다.
-
-
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal-Feature Communication -->
-
-        <!-- [s] Modal-Feature Data -->
-        <div class="modal feature fade" id="Data" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h5>Data-Driven Decision Making (데이터 기반 의사결정 역량)</h5>
-                            <ul class="other-list">
-                                <li>
-                                    <b>데이터 분석 경험</b>
-                                    <span>
-                                        SQL 부트캠프를 통해 데이터 분석 도구와 SQL 쿼리에 대한 기초 지식을 학습했으며, 향후 실제 데이터 분석에 이를 적용할 수 있도록 준비하고 있습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <b>향후 목표</b>
-                                    <span>
-                                        데이터 기반 의사결정 역량을 강화하기 위해 현재 SQL 및 데이터 분석 도구를 학습 중입니다. 
-                                        이를 통해 서비스 기획 시 사용자 데이터를 기반으로 한 구체적인 인사이트를 도출하고, 보다 정교한 기획을 구현할 계획입니다.
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal-Feature Data -->
-
-        <!-- [s] Modal 진행중인 프로젝트 -->
-        <div class="modal fade" id="ongoing" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h5 class="m-0 text-center">
-                                현재 진행중 / 진행예정인 프로젝트입니다.
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 진행중인 프로젝트 -->
-
-        <!-- [s] Modal CJ대한통운 CBE -->
-        <div class="modal fade" id="cjCbe" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h3>
-                                CJ대한통운 CBE 직구WM 서비스 구축
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                직구(해외 직접 구매)와 역직구(국내 직접 구매) 시장 확대에 따른 물동량 처리 능력 증대.
-                                <br>IT 기술을 활용하여 직구·역직구의 재고, 배송, 통관 절차를 간소화.
-                            </p>
-                            <p class="mb--30"><b>2. 역할 및 책임</b>
-                                사용자가 업무를 효율적으로 수행할 수 있도록 사용자 경험을 고려하여 화면을 디자인하고, 실제 화면으로 구현하는 역할을 맡았습니다.
-                            </p>
-                            <b>3. 프로젝트 기간</b>
-                            <p class="mb--30">프로젝트는 2024년 5월부터 2024년 12월까지 약 7개월간 진행했습니다.</p>
-                            <b>4. 기대 효과</b>
-                            <ul class="pb-2">
-                                <li>
-                                    <span>
-                                        [효율성 향상]: 물류 처리 속도와 정확도 증가.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [시장 점유율 확대]: 직구·역직구 시장에서 경쟁 우위를 확보.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [글로벌 성장]: 새로운 해외 시장 진출 및 기존 시장 강화.
-                                    </span>
-                                </li>
-                            </ul>
-                            <b>5. 결과 요약</b>
-                            <p class="mb--30">타 부서(PM, 디자인, 개발) 및 다양한 이해관계자와의 협업을 통해 일정 내 프로젝트 완수.</p>
-                            <p class="mb--30">
-                                <b>6. 회고</b>
-                                이번 프로젝트는 해외 법인이 사용할 직구/역직구 시스템을 구축하기 위해 진행되었습니다. 
-                                특히 다국어 지원이 필수 요건으로, 글로벌 사용자들이 원활하게 시스템을 사용할 수 있도록 개발하는 데 중점을 두었습니다. 
-                                화면 관련 모든 작업을 책임지며, 시스템의 사용성에 대한 책임감을 더욱 깊이 느꼈습니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>7. 프로젝트 URL</b>
-                                [비공개 - 해외 법인 전용](URL is restricted to overseas affiliates only)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal CJ대한통운 CBE -->
-
-        <!-- [s] Modal CJ대한통운 내방객 -->
-        <div class="modal fade" id="checkIn" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h3>
-                                내방객 방문 예약 시스템 구축
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                방문객들이 회사를 방문하고자 할 때 온라인 예약 시스템을 통해 예약하고, 안전 교육을 이수할 수 있는 시스템을 구축했습니다. 
-                                이 시스템은 방문객의 편의성과 관리 효율성을 동시에 향상시킬 것으로 기대됩니다.
-                            </p>
-                            <p class="mb--30"><b>2. 역할 및 책임</b>
-                                발생할 수 있는 여러 케이스를 고려하여 기획하고 화면을 설계하는데 참여하였으며,
-                                넘겨받은 디자인을 PC와 Mobile로 실질적인 구현을 하는 역할을 맡았습니다.
-                            </p>
-                            <b>4. 주요 성과 및 결과</b>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [프로젝트 일정 관리]: 프로젝트 일정이 매우 촉박했으나, 각 팀 간의 효율적인 커뮤니케이션과 리소스 조정을 통해 예정된 시간 내에 시스템 구현을 완료했습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [온라인 안전 교육]: 방문 예약 과정에서 안전 교육과 비밀 유지 서약을 동시에 진행하도록 시스템을 설계, 자산 보호와 정보 보안을 강화했습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [업무 효율성 증대]: 방문객에게 신청의 편의성을 제공하고, 예약 관리의 효율성을 높여 방문객의 요청에 신속하게 대응할 수 있게 되었습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>6. 회고</b>
-                                일정이 매우 촉박하여 각 파트의 담당자는 가능한 최대한의 역량을 발휘하여 속도를 내야 했습니다. 따라서, 추가 요청 사항까지 빠르게
-                                반영하는 데 일부
-                                어려움이 있었지만 해결하였습니다. 앞으로도 시스템 개선을 위한 사용자 피드백을 지속적으로 수집하고, 반영 가능한 개선점을 빠르게 적용하여 사용자 경험을 더욱 최적화할 계획입니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>7. 프로젝트 URL</b>
-                                Internal Access Only
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal CJ대한통운 내방객 -->
-
-        <!-- [s] Modal CJ대한통운 Data Asset -->
-        <div class="modal fade" id="dataAsset" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h3>
-                                Data Asset Dashboard 프로젝트
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 사용자들이 데이터를 쉽게 업로드하고 관리할 수 있도록 하는 것이며,
-                                데이터별 접근 권한을 달리하여 보안을 강화합니다.
-                            </p>
-                            <p class="mb--30"><b>2. 역할 및 책임</b>
-                                관리자가 업무를 효율적으로 수행할 수 있도록 UX를 고려하여 기획서를 작성하였으며,
-                                UI를 디자인하고, 실제 화면으로 구현하는 역할을 맡았습니다.
-                            </p>
-                            <p class="mb--30"><b>3. 다국어 </b>
-                                Korean 및 English, 2가지 버전으로 제작되었습니다.
-                            </p>
-                            <b>5. 주요 성과 및 결과</b>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [사용자 경험 개선] : 직관적인 인터페이스를 통해 사용자가 파일을 쉽게 업로드하고 관리할 수 있도록 히였습니다.
-                                        데이터 업로드 과정의 시간 단축 및 오류율이 감소할 것으로 예상됩니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [데이터 보안 및 안정성 보장] :
-                                        데이터별로 접근 권한을 달리하여 데이터의 안전성을 확보하였습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [작업 효율성 및 생산성 향상] : 빠른 업무 속도로 인해 같은 시간 동안, 더 많은 작업을 처리할 수 있게 되어 생산성이 높아졌습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>6. 회고</b>
-                                화면을 기획하는 과정에서 사용자 중심의 사고가 필요했습니다.
-                                또한 해당 시스템을 사용하게 될 관리자들의 작업 동선을 그리며 디자인을 하였습니다.
-                                다국어 시스템인 만큼 앞으로 많은 사용자들이 이용하게 될 것이라는 무거운 책임감으로 업무에 임하였습니다.
-                                앞으로도 사용자의 필요와 사용성을 충분히 고려하여 시스템에 반영할 것입니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>7. 프로젝트 URL</b>
-                                보안상의 이유로 외부인 접근 불가.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal CJ대한통운 Data Asset -->
-
-        <!-- [s] Modal 교보리얼코 MIS -->
-        <div class="modal fade" id="kyoboRealco01" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h3>
-                                차세대 MIS 구축 프로젝트
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 조직 내 정보 관리를 효율화하고, 더 정확하고 신속한 의사 결정을 과정을 지원하기 위함입니다.
-                            </p>
-                            <p class="mb--30"><b>2. 역할 및 책임</b>
-                                사용자가 업무를 효율적으로 수행할 수 있도록 사용자 경험을 고려하여 화면을 구성하고,
-                                실제 화면으로 구현하는 역할을 맡았습니다.
-                            </p>
-                            <div class="mb--30"><b>3. 프로젝트 기간 및 팀 규모</b>
-                                <ul>
-                                    <li>기간 : 프로젝트는 2023년 4월부터 2023년 7월까지 약 4개월간 진행했습니다.</li>
-                                    <li>팀 규모 : 기간별 투입인원이 다르지만 대략 12명으로, PM, 개발자, 퍼블리셔 등으로 구성되었습니다.</li>
-                                </ul>
-                            </div>
-                            <div class="mb--30">
-                                <b>4. 기술 및 도구</b>
-                                <ul>
-                                    <li>기술 : 프로젝트는 Typescript 기반의 Angular 프레임워크를 사용하여 개발되었습니다.</li>
-                                    <li>도구 : 형상 관리는 GitLab를 사용하였으며, 협업과 문서 공유는 Redmine를 활용했습니다.</li>
-                                </ul>
-                            </div>
-                            <b>5. 주요 성과 및 결과</b>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [페르소나 기반 개선] : 주 사용자의 연령과 직군에 맞는 페르소나를 정의하여 사용자 경험을 향상시켰습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [시각적 개선] : 리뉴얼된 화면은 사용자들이 정보를 빠르게 인식하고 이해할 수 있는데 중점을 두었습니다.
-                                        직관적인 디자인으로 사용자들이 업무 상황을 한눈에 파악할 수 있도록 하였습니다.
-                                        따라서 사용자는 더 신속하게 의사결정을 할 수 있게 되었고, 업무 처리 속도와 정확도가 향상되었습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [작업 효율 향상] : 빠른 업무 속도로 인해 같은 시간 동안, 더 많은 작업을 처리할 수 있게 되어 생산성이 높아졌습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>6. 회고</b>
-                                화면 작업 과정에서 사용자 중심의 사고를 바탕으로 깊이 있는 고민이 필요했습니다.
-                                프로젝트의 성공은 단순한 목표 달성뿐만 아니라,
-                                실제 사용자의 경험에 의한 긍정적인 반응과 피드백에 있다는 생각을 했습니다.
-                                앞으로도 사용자의 필요와 사용성을 충분히 고려하여 시스템에 반영할 것입니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>7. 프로젝트 URL</b>
-                                보안상의 이유로 외부인 접근 불가.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 교보리얼코 MIS -->
-        
-        <!-- [s] Modal 대한상공회의소 -->
-        <div class="modal fade" id="kcciUi" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img src="assets/images/other/kcci_TOBE.png" alt="자격평가사업단 TO-BE 이미지" class="img-fluid modal-feat-img">
-                        <div class="text-content">
-                            <h3>
-                                자격평가사업단 KCCI UI 리뉴얼 프로젝트
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 기존 웹사이트의 디자인을 최신 웹 표준에 맞춰 리뉴얼하고, Back-Office 시스템의 직관성을 개선하여 관리자 업무 효율성을 높이는 목표로 진행되었습니다. 
-                                이를 위해 대시보드 UI를 개선하고, 퍼블리싱을 통해 관리자들이 업무를 더 효율적으로 수행할 수 있도록 했습니다.
-                            </p>
-                            <div class="mb--30"><b>2. 역할 및 책임</b>
-                                <ul>
-                                    <li>
-                                        Back-Office 디자인 및 퍼블리싱: Back-Office 시스템의 디자인을 새로 구성하고, 퍼블리싱을 통해 대시보드의 직관성을 강화. 이를 통해 관리자들이 더 효율적으로 업무를 처리할 수 있도록 지원.
-                                    </li>
-                                    <li>
-                                        공식 웹사이트의 퍼블리싱: 공식 웹사이트의 퍼블리싱 작업을 주도적으로 진행, UI 요소와 레이아웃을 최적화하여 사용자 경험(UX)을 개선.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="mb--30"><b>3. 프로젝트 기간 및 팀 규모</b>
-                                <ul>
-                                    <li>기간 : 프로젝트는 2023년 1월부터 2023년 4월까지 약 4개월간 진행했습니다.</li>
-                                    <li>팀 규모 : 총 8명으로 (PM, 개발자, 퍼블리셔 등)으로 구성되었습니다.</li>
-                                </ul>
-                            </div>
-                            <div class="mb--30">
-                                <b>4. 주요 성과 및 결과</b>
-                                <ul>
-                                    <li>
-                                        <span>
-                                            Back-Office 직관성 향상: AS-IS의 복잡한 UI를 직관적으로 최적화하여 관리자의 업무 효율성 향상.
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span>최신 웹 표준을 적용, 모든 브라우저에서 호환성을 보장하며 안정적인 서비스를 제공.</span>
-                                    </li>
-                                    <li>
-                                        <span>관리자가 대시보드를 직관적으로 사용할 수 있도록 디자인을 개선, 관리 업무의 속도와 정확성이 증가.</span>
-                                    </li>
-                                    <li>
-                                        <span>사용성을 저해하지 않는 범위 내에서 효율적인 개발 방안을 적용하여, 개발 리소스 절감.</span>
-                                    </li>
-                                </ul>
-                            </div>                            
-                            <p class="mb--30">
-                                <b>6. 회고</b>
-                                사용자 요구사항을 정확히 반영하고 기능의 효율성을 높인 UI 설계가 성공의 핵심 요소였습니다.
-                                디자인과 개발 간의 원활한 협업을 통해 일정 내에 목표를 달성할 수 있었습니다.
-                                앞으로는 더 사용자 중심적인 디자인을 목표로 하여, 피드백을 반영한 UI 개선 작업을 지속적으로 추진할 필요성을 느꼈습니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>7. URL</b>
-                                <a href="https://license.korcham.net/indexmain.jsp" target="_blank">license.korcham.net/indexmain.jsp</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 대한상공회의소 -->
-
-        <!-- [s] Modal 교보리얼코 KPMS -->
-        <div class="modal fade" id="kyoboRealco02" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h3>
-                                KPMS 시스템 고도화 프로젝트
-                            </h3>
-                            <p class="mb--30">
-                                <b>1. 프로젝트 개요</b>
-                                목적 : 임대관리 · 시설관리 · 입주사서비스 시스템을 리뉴얼하여 사용자들의 편의성 극대화.
-                            </p>
-                            <p class="mb--30">
-                                <b>2. 역할 및 책임</b>
-                                사용자가 업무를 효율적으로 수행할 수 있도록 사용자 경험을 고려하여 화면을 구성하고,
-                                실제 화면으로 구현하는 역할을 맡았습니다.
-                            </p>
-                            <div class="mb--30">
-                                <b>3. 요구사항 분석 및 정의</b>
-                                <ul>
-                                    <li><span>계약작성 및 관리 기능을 추가하여 계약자가 계약 진행상태를 직관적으로 확인할 수 있도록 합니다.</span></li>
-                                    <li><span>전자세금계산서와 같은 형식으로 구현하여 누락되는 정보없이 명확하게 관리할 수 있도록 합니다.</span></li>
-                                </ul>
-                            </div>
-                            <div class="mb--30">
-                                <b>4. 기술 및 도구</b>
-                                <ul>
-                                    <li><span>기술 : 프로젝트는 Typescript 기반의 Angular 프레임워크를 사용하여 개발되었습니다.</span></li>
-                                    <li><span>도구 : 형상 관리는 GitLab를 사용하였으며, 협업과 문서 공유는 Redmine를 활용했습니다.</span></li>
-                                </ul>
-                            </div>
-                            <div class="mb--30">
-                                <b>5. 주요 성과 및 결과</b>
-                                <ul>
-                                    <li><span>시스템 고도화를 통해 업무 처리 속도와 정확도 향상 및 입력 오류와 누락이 감소.</span></li>
-                                    <li><span>사용자 편의성과 개발팀의 구현 효율성을 동시에 고려한 솔루션 제안.</span></li>
-                                    <li><span>반응형 작업으로 모바일에서 사용이 가능해져 사용자 만족도가 상승.</span></li>
-                                </ul>
-                            </div>
-                            <div class="mb--30">
-                                <b>6. 회고</b>
-                                <p>시스템의 특성과 개발 편의성을 고려하여, 더 나은 작업 방향을 결정하기 위한 고민이 필요했습니다.
-                                어려운 상황에서도 자기주도적으로 문제를 해결해 나가는 능력이 중요한 프로젝트였습니다.
-                                향후에도 사용자들의 의견을 수렴하여 사용자들이 시스템을 더 편리하게 이용할 수 있도록 할 계획입니다.</p>
-                            </div>
-                            <p class="mb--30">
-                                <b>7. 프로젝트 URL</b>
-                                보안상의 이유로 외부인 접근 불가.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 교보리얼코 KPMS -->
-
-        <!-- [s] Modal 대한통운 APOLO-D -->
-        <div class="modal fade" id="cjLogistics03" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <a href="https://www.klnews.co.kr/news/articleView.html?idxno=305949" target="_blank"
-                            title="기사 바로가기">
-                            <img src="assets/images/other/apolo_d.webp" alt="APOLO-D 기사 사진"
-                                class="img-fluid modal-feat-img">
-                        </a>
-                        <div class="text-content">
-                            <h3>
-                                e-Fulfillment Control Center APOLO-D 구축.
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 풀필먼트센터 내에서 발생하는 복잡한 물류 과정과 다양한 데이터·운영지표를 시각화하여 구현.
-                            </p>
-                            <div class="mb--30">
-                                <b>2. 프로젝트 기간</b>
-                                <p>기간 : 프로젝트는 2021년 12월부터 2022년 5월까지 약 6개월간 진행했습니다.</p>
-                            </div>
-                            <p class="mb--30"><b>3. 역할 및 책임</b>
-                                다양한 웹 브라우저와 모바일 기기에 대한 호환성 및 최적화 작업과
-                                접근성 및 사용성(UX)을 고려하여 실제 화면으로 구현하는 역할을 맡았습니다.
-                            </p>
-                            <b>4. 주요 성과 및 결과</b>
-                            <p class="mt--10">&#45; 개인적 업무 성과</p>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [물류 과정 시각화] : 풀필먼트센터의 복잡한 물류 과정과 다양한 데이터를 효과적으로 시각화하여, 사용자들의 이해도를 높이고 빠른 의사결정을
-                                        도와주었습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [PC/모바일 최적화] : PC와 모바일 기기에 대한 호환성 및 최적화 작업을 수행하여, 사용자들이 원하는 기기에서 서비스를 원활하게 이용할 수
-                                        있도록 했습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [실시간 모니터링 구현] : 물류센터의 실시간 모니터링이 가능하게 구현하여, 병목 현상 예상 시 즉각적인 경보 알림을 제공할 수 있게
-                                        되었습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p>&#45; 프로젝트 성과</p>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [디지털트윈 기술 활용] : 디지털트윈 기술과 알고리즘을 활용하여 풀필먼트센터의 물류 흐름을 원활하게 관리하고, 병목 현상 발생 시 즉각 대응이
-                                        가능해졌습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [배송 서비스 효율성 향상] : 새벽배송 · 당일배송 · 익일배송 등 시간대별 다양한 배송 서비스의 효율성이 향상되었습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [서비스 품질 향상] : 축적된 물류 데이터를 기반으로 셀러들에게 마케팅 인사이트를 제공하며, 이를 통해 서비스의 품질 향상이 가능해졌습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>6. 회고</b>
-                                물류기업의 경쟁력은 무형의 자산 기반으로 변화하고 있으며, 첨단 기술과 데이터의 활용이 기업의 역량을 높이는 데 있어 매우 중요해졌습니다.
-                                축적된 물류 데이터를 활용하여 셀러들에게 마케팅 인사이트를 제공할 수 있듯이,
-                                데이터를 더 효율적으로 활용하면 서비스 품질 향상에 도움이 될 수 있을 것입니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>7. 프로젝트 URL</b>
-                                보안상의 이유로 외부인 접근 불가.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 대한통운 APOLO-D -->
-   
-        <!-- [s] Modal 대림건설 노무관리 -->
-        <div class="modal fade" id="daelim" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="text-content">
-                            <h3>
-                                DL건설 노무관리시스템 고도화
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 대림건설의 내부망에서 원활한 운영을 지원하기 위한 웹 페이지 구현 및 데이터 시각화 작업을 중심으로 진행되었습니다. 
-                                이 프로젝트는 관리자가 중요한 데이터를 빠르게 파악할 수 있도록 시각적 대시보드를 구축하여 업무 효율성을 향상시키는 것을 목표로 했습니다.
-                            </p>
-                            <div class="mb--30"><b>2. 역할 및 책임</b>
-                                <ul>
-                                    <li><span>데이터 시각화: 관리자들이 필요한 정보를 빠르게 파악할 수 있도록 데이터 시각화 작업을 진행하였습니다. 이를 통해 효율적인 의사결정을 돕는 대시보드 형태의 화면을 구축했습니다.</span></li>
-                                    <li><span>웹 퍼블리싱: 웹 페이지의 퍼블리싱 작업을 통해 최종 페이지가 브라우저 호환성을 갖추고, 원활하게 운영될 수 있도록 했습니다.</span></li>
-                                </ul>
-                            </div>
-                            <p class="mb--30"><b>3. 프로젝트 범위 및 진행 과정</b>
-                                프로젝트 범위: 노무관리시스템 고도화 및 e편한세상 분양 웹 페이지 구현. 
-                                보안 이슈로 인해 대림건설 본사에 들어가서 본사 내부 PC로 직접 작업을 진행하며 시스템의 보안 요구사항을 충족시켰습니다.
-                            </p>
-                            <b>4. 주요 성과 및 결과</b>
-                            <ul>
-                                <li>
-                                    <span>
-                                        PM으로부터의 긍정적인 피드백: 개발 PM은 프로젝트 과정에서 퍼블리싱 실력에 대해 긍정적인 피드백을 주었으며, 
-                                        이는 프로젝트의 원활한 진행과 품질 보장에 기여한 결과로 평가되었습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>                                        
-                                        e-편한세상 분양 사이트는 분양 예정일에 맞춰 진행될 예정이었으나, 분양 일정이 변경되어 프로젝트가 예정보다 일찍 마무리되었습니다. 
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>6. 회고</b>
-                                보안 문제로 인해 직접 현장에서 작업을 진행하며 다양한 기술적 문제를 해결한 경험은 제 문제 해결 능력을 크게 향상시켰습니다. 
-                                이번 경험을 통해 프로젝트 관리와 문제 해결 능력을 한층 더 강화하여 더 높은 수준의 프로젝트를 이끌어갈 수 있도록 하겠습니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>7. 프로젝트 URL</b>
-                                보안상의 이유로 외부인 접근 불가.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 대림건설 노무관리 -->
-
-        <!-- [s] Modal 대한통운 Q-bridge -->
-        <div class="modal fade" id="cjLogistics02" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <a href="http://www.maritimepress.co.kr/news/articleView.html?idxno=310188" target="_blank"
-                            title="기사 바로가기">
-                            <img src="assets/images/other/q-bridge.webp" alt="Q-bridge 기사 사진"
-                                class="img-fluid modal-feat-img">
-                        </a>
-                        <div class="text-content">
-                            <h3>
-                                Q-Bridge 2.0 통합 물류 시스템 고도화.
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 국가별 업무 특성을 반영하고, 맞춤형 정보 제공을 통해 글로벌 시장에서의 경쟁력을 강화.
-                            </p>
-                            <p class="mb--30"><b>2. 역할 및 책임</b>
-                                사용자 요구사항 기반의 새로운 화면을 작업하고, 사용자 경험을 개선하는 역할을 맡았습니다.<br>
-                            </p>
-                            <div class="mb--30"><b>3. 요구사항 분석 및 정의(예시)</b>
-                                <ul>
-                                    <li><span>전세계 여러 국가에서 사용되기 때문에 다양한 언어를 지원해야 합니다.</span></li>
-                                    <li><span>새로운 기능 추가나 업그레이드를 용이하게 할 수 있는 확장성 있는 구조를 가지고 있어야 합니다.</span></li>
-                                </ul>
-                            </div>
-                            <b>4. 주요 성과 및 결과</b>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [휴먼에러 최소화] : 수기로 진행하던 서류를 전자문서 형식으로 간편하게 처리하여 수기 입력시 발생하는 휴먼에러를 최소화 할 수 있게
-                                        되었습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [사용자 경험(UX) 향상] : 여러 언어를 지원하는 플랫폼을 개발하여 국제적인 사용자 기반을 위한 웹 접근성과 편의성을 제공하였습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [효율성 향상] : 컴포넌트의 모듈화를 실시함으로써, 코드의 재사용성이 향상되었습니다. 이는 업무 효율의 증대로 이어졌습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>5. 회고</b>
-                                물품의 실시간 위치 추적 기능을 강화하여, 병목현상이 주로 어디서 발생하는지 확인하고 해결하는 데까지의 예상 시간을 계산할 수 있으면 좋겠다는
-                                생각을 했습니다. 이렇게 되면, 고객은 배송 지연 사유 및 배송 예송 시간을 확인할 수 있고, 시간 내에 물품을 수령한다면 신뢰도 향상으로 이어질 것이기
-                                때문입니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>6. 프로젝트 URL</b>
-                                보안상의 이유로 외부인 접근 불가.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 대한통운 Q-bridge -->
-    
-        <!-- [s] Modal 샤넬 ONE.com -->
-        <div class="modal fade" id="chanelStore" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                            <img src="assets/images/other/chanel.png" alt="샤넬 메인 이미지"
-                                class="img-fluid modal-feat-img">
-                        <div class="text-content">
-                            <h3>
-                                CHANEL ONE.com 온라인몰 론칭 프로젝트
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 샤넬의 공식 온라인몰을 론칭하기 위한 프로젝트로, 해외 각국의 개발팀과 협력하여 테스트 및 오류를 줄이고 성공적으로 론칭하는 것을 목표로 진행되었습니다. 
-                                
-                            </p>
-                            <div class="mb--30"><b>2. 역할 및 책임</b>
-                                <ul>
-                                    <li><span>QA 참여 및 테스트: 해외에서 개발한 온라인몰의 인수테스트에 QA로 참여하여 시나리오 테스트 및 버그 리포트 작성을 담당했습니다.</span></li>
-                                    <li><span>문제 분석 및 기술 지원: 해외 각국의 개발팀과 협업하여 기술적 지원을 제공하고, 발생한 문제를 분석하고 해결하는 과정에 적극적으로 참여했습니다.</span></li>
-                                    <li><span>협업 및 품질 관리: 다양한 이해관계자와 협업하며, 품질 보증을 위한 테스트 과정과 문제 해결을 효과적으로 조율했습니다. </span></li>
-                                </ul>
-                            </div>
-                            <div class="mb--30"><b>3. 프로젝트 기간 및 팀 규모</b>
-                                <ul>
-                                    <li><span>프로젝트 기간: 2021년 02월 ~ 2021년 07월 (6개월)</span></li>
-                                    <li><span>주요 참여 부서: 글로벌, 프랑스인 개발PM, 개발팀(해외), 디자인팀(해외), KR IT팀, QA팀 등 다양한 부서가 협력하여 프로젝트를 진행했습니다.</span></li>
-                                </ul>
-                            </div>
-                            <b>4. 주요 성과 및 결과</b>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [시나리오 테스트 및 버그 리포트 작성]: 인수테스트에서 발생한 버그를 식별하고 해결책을 제시하여 운영영의 안정성을 크게 향상시켰습니다. 
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [기술적 문제 해결]: 해외 개발팀과의 협업을 통해 개발팀에서 고치지 못하는 기술적 문제를 해결하는 법을 직접 코딩하여 가이드하였고, 동영상을 전송하여 해결했습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [품질 향상]: QA 업무를 통해 제품의 품질을 높였으며, 최종 론칭 시 안정적인 온라인몰 운영을 위한 기초를 마련했습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>5. 회고</b>
-                                해외 개발팀과의 협업을 통해 글로벌 프로젝트의 복잡성을 이해하게 되었습니다.
-                                또한, 시나리오 테스트를 통해 실제 사용자의 경험을 고려한 문제 해결의 중요성을 깨달았습니다. 
-                                이 경험을 통해 QA의 역할이 얼마나 중요한지, 그리고 테스트가 최종 제품 품질에 미치는 영향을 직접 느꼈습니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>6. URL</b>
-                                <a href="https://www.chanel.com/kr/" target="_blank">https://www.chanel.com/kr/</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 샤넬 ONE.com -->
-
-        <!-- [s] Modal KFI -->
-        <div class="modal fade" id="kfiSys" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                            <img src="assets/images/other/kfi_home.png" alt="KFI 메인 이미지"
-                                class="img-fluid modal-feat-img">
-                        <div class="text-content">
-                            <h3>
-                                차세대 통합 KFI 시스템 구축 프로젝트
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 차세대 통합 KFI시스템 구축을 통해 공공 안전 관리 시스템의 효율성을 향상시키고, 
-                                웹 접근성과 모바일 접근성을 개선하여 다양한 디바이스에서도 사용자가 편리하게 시스템을 이용할 수 있도록 하는 것이 주요 목표였습니다.
-                            </p>
-                            <div class="mb--30"><b>2. 역할 및 책임</b>
-                                <ul>
-                                    <li><span>퍼블리싱: 초급 퍼블리셔로서 고급 퍼블리셔만 참여 가능한 프로젝트에 참여할 기회를 얻었으며, 크로스브라우징, 웹 표준, 웹 접근성 및 반응형 웹을 구현하여 프로젝트를 성공적으로 론칭했습니다.</span></li>
-                                    <li><span>다양한 디바이스에서 호환성을 고려하여 사용자 경험을 최우선으로 생각하며, 모바일 환경에서도 원활한 시스템 이용이 가능하도록 작업을 진행했습니다.</span></li>
-                                </ul>
-                            </div>
-                            <div class="mb--30"><b>3. 프로젝트 기간</b>
-                                <ul>
-                                    <li><span>프로젝트 기간: 2020년 11월 ~ 2021년 01월</span></li>
-                                </ul>
-                            </div>
-                            <b>4. 주요 성과 및 결과</b>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [크로스브라우징 및 웹 표준 준수]: 다양한 브라우저 환경에서도 일관된 사용자 경험을 제공할 수 있도록 크로스브라우징 작업을 성공적으로 완료했습니다. 
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [프로젝트 론칭 성공]: 프로젝트의 핵심 목표인 시스템 론칭을 성공적으로 완료하며, 기획된 일정 내에 목표를 달성했습니다. 기술적 도전을 극복하며 프로젝트를 성공적으로 마무리했습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [협업과 유연한 일정 조정]: 개발팀장과의 일정 조율에서 어려움이 있었지만, 유연하게 대응하고 효율적인 협업을 통해 프로젝트를 예정대로 론칭했습니다. 시간대가 맞지 않는 상황에서도 적극적으로 소통하여 프로젝트 목표를 성공적으로 달성했습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>5. 회고</b>
-                                공공기관 프로젝트로 고급 퍼블리셔만 참여가 가능했던 프로젝트에 초급 퍼블리셔로 참여하여,
-                                다양한 기술을 적용하고 구현해야 했습니다. 이는 제 기술적 역량을 크게 확장시킨 중요한 경험이었습니다.
-                                또한 다양한 의견을 수렴하고 문제를 해결해 나가는 과정에서 팀워크의 중요성을 깊이 깨달았습니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>6. URL</b>
-                                <a href="https://www.kfi.or.kr/portal/main/main.do" target="_blank">https://www.kfi.or.kr/portal/main/main.do</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal KFI -->
-
-        <!-- [s] Modal 대한통운 Visibility -->
-        <div class="modal fade" id="cjLogistics01" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <a href="https://www.cjlogistics.com/ko/newsroom/news/NR_00000834" target="_blank"
-                            title="기사 바로가기">
-                            <img src="assets/images/other/cj_forwarding.webp" alt="통합 물류 시스템 기사 사진"
-                                class="img-fluid modal-feat-img">
-                        </a>
-                        <div class="text-content">
-                            <h3>
-                                통합 포워딩 시스템 Visibility 구축.
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 한국과 해외 법인들의 물류 시스템을 하나로 통합, 글로벌 표준 프로세스 확립으로 경쟁력 강화.
-                            </p>
-                            <p class="mb--30"><b>2. 역할 및 책임</b>
-                                사용자로부터 받은 피드백을 바탕으로, 사용자 경험(UX)을 개선하는 역할을 맡았습니다.<br>
-                                개발팀과 디자인팀의 사이에서 의견을 조율하고, 하나의 프로젝트를 완성하는 데 기여했습니다.
-                            </p>
-                            <div class="mb--30"><b>3. 요구사항 분석 및 정의(예시)</b>
-                                <ul>
-                                    <li><span>전세계 여러 국가에서 사용되기 때문에 다양한 언어를 지원해야 합니다.</span></li>
-                                    <li><span>새로운 기능 추가나 업그레이드를 용이하게 할 수 있는 확장성 있는 구조를 가지고 있어야 합니다.</span></li>
-                                </ul>
-                            </div>
-                            <b>4. 주요 성과 및 결과</b>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [시각적 명료성] : 중요한 정보가 잘 부각되고, 사용자가 시스템을 이해하고 사용하는 데 방해가 되지 않도록 시각적으로 명료해졌습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [맞춤형 리포트] : 축적된 다양한 데이터(고객사별 물동량, 월간 실적 등)를 활용하여, 사용자 니즈에 부합하는 맞춤형 통합 리포트의 작성이
-                                        가능해졌습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [사용자 편의성 극대화] : 사용자(Sales, Partner, Customer 등)별로 맞춤형 화면을 제공하여, 각 사용자가 필요로 하는
-                                        정보를
-                                        한눈에 볼 수 있게 되었습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>5. 회고</b>
-                                한국, 미국, 중국, 홍콩, 캐나다, 일본, 베트남, 인도네시아 총 8개국 법인이 1차로 사용하고, 향후 전 세계로 확대될 예정입니다.
-                                앞으로 'Q-Bridge'의 글로벌 확대 적용과정에서 발생할 수 있는 이슈를 해결하기 위한 준비가 되어 있으며,
-                                이 프로젝트가 CJ대한통운이 물류업계에서의 기술 리더십을 확립하는 데 기여할 것이라 확신합니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>6. 프로젝트 URL</b>
-                                보안상의 이유로 외부인 접근 불가.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 대한통운 Visibility -->
-
-        <!-- [s] Modal 핫트랙스 -->
-        <div class="modal fade" id="hottProj" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                            <img src="assets/images/other/hottracks.png" alt="핫트랙스 메인 이미지"
-                                class="img-fluid modal-feat-img">
-                        <div class="text-content">
-                            <h3>
-                                교보핫트랙스 온라인몰 프론트 신규개발
-                            </h3>
-                            <p class="mb--30"><b>1. 프로젝트 개요</b>
-                                목적 : 쇼핑몰 웹과 앱의 적응형 디자인을 통해 다양한 모바일 기기와 브라우저 환경에서 최적화된 사용자 경험을 제공하는 것을 목표로 했습니다. 
-                            </p>
-                            <div class="mb--30"><b>2. 역할 및 책임</b>
-                                <ul>
-                                    <li><span>적응형 디자인 구현: 다양한 모바일 기기와 브라우저 환경에서 최적화된 사용자 경험을 제공할 수 있도록 적응형 디자인을 구현했습니다.</span></li>
-                                    <li><span>웹 퍼블리싱: 쇼핑몰 Web/App 론칭을 위한 퍼블리싱 작업을 주도하여, 브라우저 호환성과 반응형 디자인을 최적화했습니다.</span></li>
-                                    <li><span>사용자 경험 향상: 쇼핑몰의 UI/UX를 개선하여 모바일 환경에서의 접근성과 편리한 쇼핑 경험을 제공했습니다.</span></li>
-                                </ul>
-                            </div>
-                            <div class="mb--30"><b>3. 프로젝트 기간 및 주요 참여 부서</b>
-                                <ul>
-                                    <li><span>프로젝트 기간: 2019년 10월 ~ 2020년 02월 (5개월)</span></li>
-                                    <li><span>주요 참여 부서: PM, 기획팀, 디자인팀, 개발팀 등 다양한 부서가 협력하여 프로젝트를 진행했습니다.</span></li>
-                                </ul>
-                            </div>
-                            <b>4. 주요 성과 및 결과</b>
-                            <ul>
-                                <li>
-                                    <span>
-                                        [사용자 경험 향상]: 다양한 모바일 기기와 브라우저 환경에서 적응형 디자인을 통해 최적화된 사용자 경험을 제공하며 사용자 만족도를 크게 향상시켰습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [Web/App 론칭]: 쇼핑몰 Web/App 론칭을 성공적으로 완료하여, 사용자가 편리하게 접근할 수 있는 환경을 제공했습니다.
-                                    </span>
-                                </li>
-                                <li>
-                                    <span>
-                                        [브라우저 호환성 확보]: iOS 기기와 안드로이드 기기에서 버전 별 기능 제한이나 호환성 문제가 발생했으나, 철저한 크로스브라우징 테스트와 디바이스별 최적화 작업을 통해 이를 해결했습니다.
-                                    </span>
-                                </li>
-                            </ul>
-                            <p class="mb--30">
-                                <b>5. 회고</b>
-                                다양한 디바이스와 브라우저 환경에 최적화된 사용자 경험을 제공하는 것이 얼마나 중요한지 실감했습니다. 
-                                특히, 사파리(Safari)와 안드로이드 브라우저에서의 버전 차이를 해결하며, 기술적 도전을 극복하는 경험을 얻었습니다. 
-                                이를 통해, 호환성 테스트와 디바이스별 최적화의 중요성을 다시 한 번 느꼈습니다.
-                            </p>
-                            <p class="mb--30">
-                                <b>6. URL</b>
-                                <a href="https://hottracks.kyobobook.co.kr/ht/welcomeMain" target="_blank">https://hottracks.kyobobook.co.kr/ht/welcomeMain</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- [e] Modal 핫트랙스 -->
+        <!-- [e] Modal Template -->
     </main>
 
     <!-- Lib -->
     <script src="assets/js/lib/jquery-3.7.1.min.js"></script>
     <script src="assets/js/lib/feather.min.js"></script>
     <script src="assets/js/lib/slick.min.js"></script>
-    <script src="assets/js/lib/bootstrap.js" async></script>
+    <script src="assets/js/lib/bootstrap.js"></script>
     <script src="assets/js/lib/trans-animation.js"></script>
     <script src="assets/js/lib/wow.js"></script>
     <script src="assets/js/lib/aos.js"></script>
     <script src="assets/js/lib/jquery.nav.js"></script>
     <!-- Javascript -->
     <script src="assets/js/main.js"></script>
+    <script>
+        fetch('assets/js/project-modals.json')
+          .then(res => res.json())
+          .then(data => {
+            const projectData = data;
+      
+            document.querySelectorAll('.sec-portfolio').forEach(el => {
+              el.addEventListener('click', () => {
+                const id = el.dataset.id;
+                const project = projectData.find(p => p.id === id);
+                if (!project) {
+                  console.warn(`No project found with id: ${id}`);
+                  return;
+                }
+      
+                let index = 1;
+
+                const html = `
+                <div class="text-content">
+                    ${project.image ? `<img src="${project.image}" alt="${project.title} 메인 이미지" class="img-fluid modal-feat-img">` : ''}
+                     <h3>${project.title}</h3>
+                    <p class="mb--30"><b>${index++}. 프로젝트 개요</b>${project.overview}</p>
+                    <p><b>${index++}. 역할 및 책임</b></p>
+                    ${
+                    project.role_list
+                        ? `<ul class="pb-2">${project.role_list.map(item => `<li><span>${item}</span></li>`).join('')}</ul>`
+                        : `<p class="mb--30">${project.role || ''}</p>`
+                    }
+
+                    <p class="mb--30"><b>${index++}. 프로젝트 기간</b>${project.duration}</p>
+                    ${
+                    project.participants || project.participants_list
+                        ? (
+                            project.participants_list
+                            ? `<p class="mb--30"><b>${index++}. 주요 참여 부서</b></p>
+                                <ul class="pb-2">${project.participants_list.map(item => `<li><span>${item}</span></li>`).join('')}</ul>`
+                            : `<p class="mb--30"><b>${index++}. 주요 참여 부서</b>${project.participants}</p>`
+                        )
+                        : ''
+                    }
+
+                    ${
+                    project.requirements
+                        ? `<p><b>${index++}. 요구사항 분석</b></p>
+                        <ul class="pb-2">${project.requirements.map(item => `<li><span>${item}</span></li>`).join('')}</ul>`
+                        : ''
+                    }
+
+                    ${
+                    project.tech
+                        ? `<p><b>${index++}. 기술 및 도구</b></p>
+                        <ul class="pb-2">${project.tech.map(item => `<li><span>${item}</span></li>`).join('')}</ul>`
+                        : ''
+                    }
+
+                    <p><b>${index++}. 주요 성과 및 결과</b></p>
+                    <ul class="pb-2">
+                        ${project.results.map(result => `<li><span>${result}</span></li>`).join('')}
+                    </ul>
+
+                    <p class="mb--30"><b>${index++}. 회고</b>${project.reflection}</p>
+
+                    <p class="mb--30"><b>${index++}. URL</b>${
+                    project.url.startsWith('http')
+                        ? `<a href="${project.url}" target="_blank">${project.url}</a>`
+                        : project.url
+                    }</p>
+                </div>
+                `;
+      
+                document.getElementById('modal-content-area').innerHTML = html;
+      
+                // Feather 아이콘 초기화
+                if (typeof feather !== 'undefined') {
+                  feather.replace();
+                }
+              });
+            });
+          });
+      </script>      
 </body>
 
 </html>
