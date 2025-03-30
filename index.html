@@ -1020,84 +1020,81 @@
     <!-- Javascript -->
     <script src="assets/js/main.js"></script>
     <script>
-        fetch('assets/js/project-modals.json')
-          .then(res => res.json())
-          .then(data => {
+       fetch('assets/js/project-modals.json')
+        .then(res => res.json())
+        .then(data => {
             const projectData = data;
-      
+
             document.querySelectorAll('.sec-portfolio').forEach(el => {
-              el.addEventListener('click', () => {
-                const id = el.dataset.id;
-                const project = projectData.find(p => p.id === id);
-                if (!project) {
-                  console.warn(`No project found with id: ${id}`);
-                  return;
-                }
-      
-                let index = 1;
-
-                const html = `
-                <div class="text-content">
-                    ${project.image ? `<img src="${project.image}" alt="${project.title} 메인 이미지" class="img-fluid modal-feat-img">` : ''}
-                     <h3>${project.title}</h3>
-                    <p class="mb--30"><b>${index++}. 프로젝트 개요</b>${project.overview}</p>
-                    <p><b>${index++}. 역할 및 책임</b></p>
-                    ${
-                    project.role_list
-                        ? `<ul class="pb-2">${project.role_list.map(item => `<li><span>${item}</span></li>`).join('')}</ul>`
-                        : `<p class="mb--30">${project.role || ''}</p>`
+                el.addEventListener('click', () => {
+                    const id = el.dataset.id;
+                    const project = projectData.find(p => p.id === id);
+                    if (!project) {
+                    console.warn(`못찾는 id: ${id}`);
+                    return;
                     }
 
-                    <p class="mb--30"><b>${index++}. 프로젝트 기간</b>${project.duration}</p>
-                    ${
-                    project.participants || project.participants_list
-                        ? (
-                            project.participants_list
-                            ? `<p class="mb--30"><b>${index++}. 주요 참여 부서</b></p>
-                                <ul class="pb-2">${project.participants_list.map(item => `<li><span>${item}</span></li>`).join('')}</ul>`
-                            : `<p class="mb--30"><b>${index++}. 주요 참여 부서</b>${project.participants}</p>`
-                        )
-                        : ''
+                    let index = 1;
+
+                    const renderList = (items) =>
+                    `<ul class="pb-2">${items.map(item => `<li><span>${item}</span></li>`).join('')}</ul>`;
+
+                    const html = `
+                    <div class="text-content">
+                        ${project.image ? `<img src="${project.image}" alt="${project.title} 메인 이미지" class="img-fluid modal-feat-img">` : ''}
+                        <h3>${project.title}</h3>
+
+                        <p class="mb--30"><b>${index++}. 프로젝트 개요</b>${project.overview}</p>
+
+                        <p><b>${index++}. 역할 및 책임</b></p>
+                        ${
+                        project.role_list
+                            ? renderList(project.role_list)
+                            : `<p class="mb--30">${project.role || ''}</p>`
+                        }
+
+                        <p class="mb--30"><b>${index++}. 프로젝트 기간</b>${project.duration}</p>
+
+                        ${
+                        project.participants
+                            ? `<p class="mb--30"><b>${index++}. 주요 참여 부서</b>${project.participants}</p>`
+                            : ''
+                        }
+
+                        ${
+                        project.requirements
+                            ? `<p><b>${index++}. 요구사항 분석</b></p>${renderList(project.requirements)}`
+                            : ''
+                        }
+
+                        ${
+                        project.tech
+                            ? `<p><b>${index++}. 기술 및 도구</b></p>${renderList(project.tech)}`
+                            : ''
+                        }
+
+                        <p><b>${index++}. 주요 성과 및 결과</b></p>
+                        ${renderList(project.results)}
+
+                        <p class="mb--30"><b>${index++}. 회고</b>${project.reflection}</p>
+
+                        <p class="mb--30"><b>${index++}. URL</b>${
+                        project.url.startsWith('http')
+                            ? `<a href="${project.url}" target="_blank">${project.url}</a>`
+                            : project.url
+                        }</p>
+                    </div>
+                    `;
+
+                    document.getElementById('modal-content-area').innerHTML = html;
+
+                    // Feather 아이콘 다시 적용
+                    if (typeof feather !== 'undefined') {
+                    feather.replace();
                     }
-
-                    ${
-                    project.requirements
-                        ? `<p><b>${index++}. 요구사항 분석</b></p>
-                        <ul class="pb-2">${project.requirements.map(item => `<li><span>${item}</span></li>`).join('')}</ul>`
-                        : ''
-                    }
-
-                    ${
-                    project.tech
-                        ? `<p><b>${index++}. 기술 및 도구</b></p>
-                        <ul class="pb-2">${project.tech.map(item => `<li><span>${item}</span></li>`).join('')}</ul>`
-                        : ''
-                    }
-
-                    <p><b>${index++}. 주요 성과 및 결과</b></p>
-                    <ul class="pb-2">
-                        ${project.results.map(result => `<li><span>${result}</span></li>`).join('')}
-                    </ul>
-
-                    <p class="mb--30"><b>${index++}. 회고</b>${project.reflection}</p>
-
-                    <p class="mb--30"><b>${index++}. URL</b>${
-                    project.url.startsWith('http')
-                        ? `<a href="${project.url}" target="_blank">${project.url}</a>`
-                        : project.url
-                    }</p>
-                </div>
-                `;
-      
-                document.getElementById('modal-content-area').innerHTML = html;
-      
-                // Feather 아이콘 초기화
-                if (typeof feather !== 'undefined') {
-                  feather.replace();
-                }
-              });
+                });
             });
-          });
+        });
       </script>      
 </body>
 
