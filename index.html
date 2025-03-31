@@ -922,8 +922,7 @@
                                                     Yeji Cho
                                                     <!-- <span class="pl--15">Assistant Manager</span> -->
                                                 </h2>
-                                                <p class="disc">프로젝트에 대한 추가적인 정보가 필요하시거나 문의사항이 있으시면, 아래의 연락처로 연락주세요.
-                                                    빠르게 답변드리겠습니다.</p>
+                                                <p class="disc">궁금하신 점이나 추가로 확인이 필요한 사항이 있으시면, 아래 연락처로 편하게 연락 주세요. 확인 후 답변드리겠습니다.</p>
                                             </div>
                                             <div class="user-info-footer">
                                                 <div class="info" title="working time">
@@ -1041,7 +1040,12 @@
 
                     const html = `
                     <div class="text-content">
-                        ${project.image ? `<img src="${project.image}" alt="${project.title} 메인 이미지" class="img-fluid modal-feat-img">` : ''}
+                        ${project.image ? `
+                            <div class="modal-img-wrapper">
+                                <div class="img-spinner"></div>
+                                <img src="${project.image}" alt="${project.title} 메인 이미지" class="img-fluid modal-feat-img" onload="this.previousElementSibling.style.display='none'; this.style.opacity=1;">
+                            </div>
+                        ` : ''}
                         <h3>${project.title}</h3>
 
                         <p class="mb--30"><b>${index++}. 프로젝트 개요</b>${project.overview}</p>
@@ -1095,7 +1099,7 @@
                 });
             });
         });
-      </script>      
+    </script>      
 </body>
 
 </html>

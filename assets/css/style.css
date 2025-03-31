@@ -9305,3 +9305,28 @@ button.close {
 	background-size: contain;
 	transform: rotate(180deg);
 }
+
+.modal-img-wrapper {
+	position: relative;
+	height: auto;
+	min-height: 240px;
+  }
+  .modal-img-wrapper .img-spinner {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	width: 32px; height: 32px;
+	border: 4px solid #ccc;
+	border-top-color: #333;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+  }
+  .modal-img-wrapper img {
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+  }
+  @keyframes spin {
+	to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  
