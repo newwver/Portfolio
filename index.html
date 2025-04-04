@@ -73,7 +73,7 @@
                     <div class="w-auto">
                         <div class="preview">
                             <div class="preview-inner">
-                                <img src="assets/images/profile.png" alt="프로필 이미지">
+                                <img src="assets/images/profile.webp" alt="프로필 이미지">
                             </div>
                         </div>
                     </div>
@@ -1029,8 +1029,8 @@
                     const id = el.dataset.id;
                     const project = projectData.find(p => p.id === id);
                     if (!project) {
-                    console.warn(`못찾는 id: ${id}`);
-                    return;
+                        console.warn(`못찾는 id: ${id}`);
+                        return;
                     }
 
                     let index = 1;

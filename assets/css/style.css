@@ -7,7 +7,7 @@
 	--color-tertiary: #0d1013;
 	--color-gray: #f6f6f6;
 	--color-subtitle: #03e4fb;
-	--background-color-1: linear-gradient(to right bottom, #060f2c, #001225);
+	--background-color-1: linear-gradient(165deg, #041220, #000f31);
 	--background-color-2: #1e252e;
 	--shadow-1: 6px 6px 14px rgb(32 52 81 / 25%), -6px -5px 14px rgb(46 75 118 / 25%);
 	--shadow-2: inset 21px 21px 19px #181a1d, inset -21px -21px 19px #202225;
@@ -6703,7 +6703,7 @@ body {
 }
 
 .sec-header.header--fixed.sticky {
-	background-color: rgba(4, 17, 33, 0.7);
+	/* background-color: rgba(4, 17, 33, 0.7); */
 	box-shadow: var(--shadow-1);
 	position: fixed;
 	backdrop-filter: blur(5px);
@@ -7111,19 +7111,18 @@ body {
 }
 .slide .preview .preview-inner {
 	text-align: center;
-    box-shadow: -1px 1px 15px 10px #1f374f78;
-    border-radius: 10.5rem;
-    max-height: 320px;
-	min-height: 310px;
+    box-shadow: -2px -3px 20px 5px rgb(255 255 255 / 15%);
+    border-radius: 11rem;
+    height: 310px;
     overflow: hidden;
     background: linear-gradient(135deg, #ffffff, #f9f9f9);
 }
 .slide .preview .preview-inner img {
 	border: 0;
     vertical-align: middle;
-    width: 220px;
+    width: 230px;
     height: auto;
-    transform: translate(0px, 16px);
+    transform: scale(1.15) translate(0px, 30px);;
 }
 .slide .preview.box-gradient::before {
 	width: 100%;
@@ -8126,6 +8125,8 @@ body {
 .sec-portfolio::before,
 .sec-more::before {
 	content: '';
+	opacity: 0;
+	z-index: -1;
 	position: absolute;
 	transition: var(--transition);
 	width: 100%;
@@ -8133,9 +8134,9 @@ body {
 	border-radius: 15px;
 	top: 0;
 	left: 0;
-	background: linear-gradient(145deg, #142251, #15204d, #271e46, #241545);
-	opacity: 0;
-	z-index: -1;
+	background: linear-gradient(180deg, #030f1d, #241545);
+	box-shadow: 0px 0px 6px 1px rgba(255, 255, 255, 0.15);
+	transition-timing-function: linear;
 }
 .sec-portfolio:hover::before,
 .sec-more:hover::before {
