@@ -4,6 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4CXPN36JT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S4CXPN36JT');
+    </script>
     <title>예지의 Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="조예지의 포트폴리오입니다.">
@@ -14,9 +23,9 @@
     <meta property="og:site_name" content="Portfolio">
     <meta property="og:title" content="예지의 포트폴리오">
     <meta property="og:description" content="조예지의 포트폴리오입니다.">
-    <meta property="og:url" content="https://newwver.github.io/Portfolio//">
     <meta property="og:image" content="assets/images/profile2.webp">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/lib/slick.css">
     <link rel="stylesheet" href="assets/css/lib/slick-theme.css">
@@ -26,7 +35,11 @@
 </head>
 
 <body data-spy="scroll" data-target=".nav-position" data-offset="70">
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K44PWDCB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+     
     <!-- [s] Header -->
     <header class="sec-header haeder-default header--fixed header--sticky">
         <div class="header-wrapper align-items-center justify-content-md-center row">
@@ -50,8 +63,8 @@
                             <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
                             <!-- <li class="nav-item"><a class="nav-link" href="#feature">Features</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link" href="#training">Training</a></li> -->
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#study">study</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         </ul>
                         <!-- [e] primaryMenu Nav -->
@@ -68,48 +81,89 @@
 
         <!-- [s] Home -->
         <div class="slide type-4" id="home">
-            <div class="container" style="z-index: 1;">
-                <div class="align-items-center gap-0 gap-lg-4 justify-content-center row row--30">
-                    <div class="w-auto">
-                        <div class="preview">
-                            <div class="preview-inner">
-                                <img src="assets/images/profile.webp" alt="프로필 이미지">
-                            </div>
-                        </div>
+            <div class="container animat" style="z-index: 1;">
+                <div class="card">
+                    <div class="images">
+                        <img class="me" src="./assets/images/profile.webp" loading="lazy" alt="profile">
                     </div>
-                    <div
-                        class="content d-flex col-lg-4 justify-content-center justify-content-lg-start mt_md--80 mt_sm--70">
-                        <div class="home-inner px-4 px-md-0 text-center text-lg-start">
-                            <span class="subtitle">안녕하세요. <br class="d-md-none d-block">주요 프로젝트 중심의 실무 기록입니다.</span>
-                            <h1 class="title mb--0">
-                                <span class="header-caption" id="page-top">
-                                    <span class="change-text clip">
-                                        <span class="change-text-wrap">
-                                            <b class="is-visible">Product Manager</b>
-                                            <b class="is-hidden">Project Manager</b>
-                                        </span>
+                    <div class="title">
+                        <h1>
+                            <span class="header-caption" id="page-top">
+                                <span class="change-text clip">
+                                    <span class="change-text-wrap">
+                                        <b class="is-visible">Product Manager</b>
+                                        <b class="is-hidden">Product Owner</b>
                                     </span>
                                 </span>
-                                <br>조예지
-                            </h1>
-                            <div class="header-wrap mt_md--30 mt_sm--30">
-                                <ul class="header-content">
-                                    <li><span>EMAIL</span>yezicho11@gmail.com</li>
-                                    <li><span>BIRTHDAY</span>April 24, 1992</li>
-                                </ul>
-                                <ul class="header-content two">
-                                    <li><span>LOCATION</span>Seoul</li>
-                                    <li><span>EXPERIENCE</span>6+ years</li>
-                                </ul>
-                            </div>
-                        </div>
+                            </span>
+                            <br>조예지
+                        </h1>
+                    </div>
+                    <div class="header-wrap mt_md--30">
+                        <ul class="header-content">
+                            <li><span>LOCATION</span>Seoul</li>
+                            <li><span>BIRTHDAY</span>April 24, 1992</li>
+                        </ul>
+                        <ul class="header-content two">
+                            <li><span>EMAIL</span>yezicho11@gmail.com</li>
+                            <li><span>EXPERIENCE</span>6+ years</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+              </div>
+              <script>
+                const container = document.querySelector(".animat");
+                const card = document.querySelector(".card");
+                const title = document.querySelector(".title");
+            
+                let mouseX = 0;
+                let mouseY = 0;
+            
+                // 마우스 이벤트 및 터치 이벤트 처리
+                container.addEventListener("mousemove", (event) => {
+                  handleMove(event.clientX, event.clientY);
+                });
+            
+                container.addEventListener("touchmove", (event) => {
+                  const touch = event.touches[0];
+                  handleMove(touch.clientX, touch.clientY);
+                });
+            
+                function handleMove(x, y) {
+                  const { innerWidth, innerHeight } = window;
+                  const normalizedX = (x / innerWidth) * 2 - 1;
+                  const normalizedY = -(y / innerHeight) * 2 + 1;
+            
+                  mouseX = normalizedX;
+                  mouseY = normalizedY;
+            
+                  // 회전 및 이동
+                  gsap.to(card, {
+                    rotationY: mouseX * -30,
+                    rotationX: mouseY * -20,
+                    duration: 0.5
+                  });
+            
+                  gsap.to(title, {
+                    z: 150 + mouseY * -30, // z 값에 마우스 방향성 추가
+                    duration: 0.5,         // 애니메이션 속도 일치
+                    ease: "power1.out"     // 부드러운 동작
+                  });
+                }
+            
+                // 이벤트에서 벗어났을 때 초기 상태로 되돌림
+                container.addEventListener("mouseout", () => {
+                  mouseX = 0;
+                  mouseY = 0;
+            
+                  gsap.to(card, { rotationY: 0, rotationX: 0, duration: 0.5 });
+                  gsap.to(title, { z: 0, duration: 0.5, ease: "power1.out" });
+                });
+            </script>
         </div>
         <!-- [e] Home -->
 
-        <!-- [s] Portfolio -->
+        <!-- [s] Project -->
         <div class="bumper seperator" id="project">
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
@@ -118,10 +172,10 @@
                     <h2 class="title">project</h2>
                 </div>
 
-                <div class="row-reverse row row--25 mt--10 mt_md--10 mt_sm--10 px-4 px-lg-0">
+                <div class="row row--25 mt--10 mt_md--10 mt_sm--10 px-4 px-lg-0">
 
                     <!-- [s] 대한통운 CBE 구축 -->
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="sec-portfolio" data-id="cjCbe" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
@@ -203,7 +257,7 @@
                     <!-- [e] 대한통운 방문예약시스템 -->
 
                     <!-- [s] 대한통운 Data Asset -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="sec-portfolio" data-id="dataAsset" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
@@ -244,7 +298,7 @@
                     <!-- [e] 대한통운 Data Asset -->
 
                     <!-- [s] 교보리얼코 MIS -->
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="sec-portfolio" data-id="kyoboRealco01" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner cursor-pointer">
@@ -325,7 +379,7 @@
                     <!-- [e] 대한상공회의소 -->
 
                     <!-- [s] 교보리얼코 KPMS -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="sec-portfolio" data-id="kyoboRealco02" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner cursor-pointer">
@@ -363,7 +417,7 @@
                     <!-- [e] 교보리얼코 KPMS -->
 
                     <!-- [s] 대한통운 APOLO-D -->
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="sec-portfolio" data-id="cjLogistics03" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner cursor-pointer">
@@ -441,7 +495,7 @@
                     <!-- [e] DL건설 노무관리 -->
 
                     <!-- [s] 대한통운 Q-bridge -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="sec-portfolio" data-id="cjLogistics02" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
@@ -481,7 +535,7 @@
                     <!-- [e] 대한통운 Q-bridge -->
 
                     <!-- [s] 샤넬코리아 -->
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="sec-portfolio" data-id="chanelStore" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
@@ -564,10 +618,10 @@
                     <!-- [e] KFI소방산업기술원 -->
 
                     <!-- [s] 대한통운 Visibility -->
-                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="sec-portfolio" data-id="cjLogistics01" data-bs-toggle="modal" data-bs-target="#projectModal">                            
-                            <div class="inner cursor-pointer">
+                            <div class="inner">
                                 <div class="preview">
                                     <a href="javascript:void(0);">
                                         <i class=" icon svg-logistics"></i>
@@ -604,7 +658,7 @@
                     <!-- [e] 대한통운 Visibility -->
 
                     <!-- [s] 핫트랙스 -->
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
                         <div class="sec-portfolio" data-id="hottProj" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
@@ -645,11 +699,10 @@
                     <!-- [s] 해피오더 -->
                     <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="sec-portfolio">
+                        <div class="sec-portfolio" data-id="spcSamlip" data-bs-toggle="modal" data-bs-target="#projectModal">
                             <div class="inner">
                                 <div class="preview">
-                                    <a href="https://play.google.com/store/apps/details?id=com.happypointcard.happyorder&hl=ko" target="_blank"
-                                        aria-label="상세보기">
+                                    <a href="javascript:void(0);">
                                         <i class=" icon svg-spc"></i>
                                     </a>
                                 </div>
@@ -661,7 +714,7 @@
                                         <span class="color-lightn fs-5">2019.05 - 2019.09</span>
                                     </div>
                                     <h4 class="title">
-                                        <a href="https://play.google.com/store/apps/details?id=com.happypointcard.happyorder&hl=ko" target="_blank">해피오더
+                                        <a href="javascript:void(0);">해피오더
                                             차세대 주문배달앱 구축</a>
                                     </h4>
                                     <!-- <p class=" description fs-4 mb--10 mt--15">
@@ -685,15 +738,15 @@
                 </div>
             </div>
         </div>
-        <!-- [e] Portfolio -->
+        <!-- [e] Project -->
          
-        <!-- [s] Blog  -->
-        <div class="bumper seperator" id="blog">
+        <!-- [s] portfolio  -->
+        <div class="bumper seperator" id="portfolio">
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
                     class="section-title text-center">
-                    <span class="subtitle">VISIT MY BLOG</span>
-                    <h2 class="title">Notion</h2>
+                    <span class="subtitle">My Work</span>
+                    <h2 class="title">Portfolio</h2>
                 </div>
 
                 <div class="row">
@@ -705,22 +758,22 @@
                                 <div class="inner">
                                     <div class="blog-desc">
                                         <div class="blog-preview">
-                                            <img src="assets/images/other/woowa.webp" loading="lazy" alt="">
+                                            <img src="assets/images/other/side_project.webp" loading="lazy" alt="">
                                         </div>
                                         <div class="blog-detail">
                                             <div class="title-area">
                                                 <div class="title-info">
-                                                    <h3 class="title">배달의민족 서비스 분석 리포트</h3>
-                                                    <span class="date">Analysis</span>
+                                                    <h3 class="title">왜 카카오페이냐구요? - 통장은 못 해요, 이런 경험.                                                   </h3>
+                                                    <span class="date">2025.05.01</span>
                                                 </div>
                                             </div>
                                             <div class="seperator"></div>
                                             <p class="description">
-                                                배달의민족의 서비스 현황, 비즈니스 모델, 산업 및 경쟁사 분석을 통해 사용자의 Pain Point를 도출하고, 
-                                                이를 기반으로 서비스 개선 아이디어를 제안했습니다.
-                                                <a href="https://abalone-detective-18f.notion.site/d63c02403f514fbd905cc1bd743d8a2d"
+                                                왜 꼭 통장이어야 할까? 왜 은행을 거쳐야만 금융이 시작될까?<br>
+                                                익숙했던 금융의 형태에 의문을 던지며, 새로운 가능성을 고민했습니다.
+                                                <a href="https://www.yejipm.com/portfolio/"
                                                     class="over-link" target="_blank"><span class="external-text">
-                                                        Notion 에서 읽어보기
+                                                        자세히 보기
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                             stroke-width="2" stroke-linecap="round"
@@ -735,12 +788,13 @@
                                                 </a>
                                             </p>
                                         </div>
+                                        <a class="blog-anchor" href="https://www.yejipm.com/portfolio/" target="_blank">자세히 보기</a>
                                     </div>
                                 </div>
                             </div>
                             <!-- [e] : Slide -->
-                            <!-- [s] : Slide -->
-                            <div class="blog mt--50 mt_md--40 mt_sm--40">
+                            <!-- [s] : Slide 2 -->
+                            <!-- <div class="blog mt--50 mt_md--40 mt_sm--40">
                                 <div class="inner">
                                     <div class="blog-desc">
                                         <div class="blog-preview">
@@ -749,7 +803,7 @@
                                         <div class="blog-detail">
                                             <div class="title-area">
                                                 <div class="title-info">
-                                                    <h3 class="title">올리브영 서비스 분석 및 A/B Test</h3>
+                                                    <h3 class="title">Notion</h3>
                                                     <span class="date">Analysis</span>
                                                 </div>
                                             </div>
@@ -757,7 +811,7 @@
                                             <p class="description">
                                                 올리브영의 비즈니스 모델을 기반으로 BMC 분석, 산업 및 경쟁사 분석을 수행하여 인사이트를 도출하고,
                                                 Pain Point 분석 및 A/B 테스트 설계를 통해 구매 전환율을 높일 수 있는 구체적인 개선안을 제안했습니다.
-                                                <a href="https://abalone-detective-18f.notion.site/1b138d47534480969b60f4f3f340cd4b"
+                                                <a href="https://abalone-detective-18f.notion.site/PM-cfad228b99254b3fbac380e88bfccd80"
                                                     class="over-link" target="_blank"><span class="external-text">
                                                         Notion 에서 읽어보기
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -776,121 +830,158 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- [e] : Slide -->
+                            </div> -->
+                            <!-- [e] : Slide 2 -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- [e] Blog  -->
+        <!-- [e] portfolio  -->
 
-        <!-- [s] Training -->
-        <!-- <div class="bumper seperator" id="training">
+        <!-- [s] Study  -->
+        <div class="bumper seperator" id="study">
             <div class="container">
                 <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true"
                     class="section-title text-center">
-                    <h2 class="title">training</h2>
+                    <span class="subtitle">Growth LAB</span>
+                    <h2 class="title">STUDY</h2>
                 </div>
-                <div class="row mt--10">
-
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true"
-                        class="sec-training">
-                        <div class="training-left">
-                            <div class="training-image">
-                                <img src="assets/images/logo/sql_bootcamp.webp" alt="썸네일" loading="lazy">
-                            </div>
-                            <div class="training-center">
-                                <span class="date">SQL</span>
-                                <h4 class="training-title">
-                                    데이터 역량 강화를 위한 SQL부트캠프
-                                </h4>
-                                <h6 class="subtitle">
-                                    SQL을 이용한 쿼리 작성법, 실제 문제에 직접 적용해보고 데이터 분석 보고서 작성하는 법.
-                                </h6>
-                                <p class="disc">Udemy</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true"
-                        class="sec-training">
-                        <div class="training-left">
-                            <div class="training-image">
-                                <img src="assets/images/logo/reverse_planning.jpg" alt="수업 썸네일" loading="lazy">
-                            </div>
-                            <div class="training-center">
-                                <span class="date">기획</span>
-                                <h4 class="training-title">
-                                    101개 케이스로 끝내는 역기획 & Case study.
-                                </h4>
-                                <h6 class="subtitle">
-                                    서비스의 문제 발견, 개선안 도출하는 과정부터 Front, Backend, Data 구조 설계와 전략까지.
-                                </h6>
-                                <p class="disc">FASTCAMPUS</p>
+                <div class="row">
+                    <div class="study-wrapper slick-arrow-type01">
+                        <!-- [s] studies -->
+                        <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="study-slide col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                            <div class="sec-more">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/logo/zero_pm.png" alt="zerobase" loading="lazy">
+                                    </div>
+                                    <div class="content">
+                                        <div class="category-info">
+                                            <div class="category-list"><p>PM&#183;PO</p></div>
+                                            <div class="category-time">
+                                                <i class="ico-clock"></i><span>2025.01 ~ 2025.04</span>
+                                            </div>
+                                        </div>
+                                        <span class="blog-tag">#PMCourse</span>
+                                        <span class="blog-tag">#과제실습</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true" class="sec-training">
-                        <div class="training-left">
-                            <div class="training-image">
-                                <img src="assets/images/logo/programmers_logo.svg" alt="logo" loading="lazy">
-                            </div>
-                            <div class="training-center">
-                                <span class="date">개발</span>
-                                <h4 class="training-title">
-                                    FE 과제로 배우는 JavaScript.
-                                </h4>
-                                <h6 class="subtitle">
-                                    프레임워크나 라이브러리없이 순수 JavaScript로 웹을 구현하며 기본기를 쌓는 법.
-                                </h6>
-                                <p class="disc">PROGRAMMERS</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true" class="sec-training">
-                        <div class="training-left">
-                            <div class="training-image">
-                                <img src="assets/images/logo/figma_camp.webp" alt="썸네일" loading="lazy">
-                            </div>
-                            <div class="training-center">
-                                <span class="date">디자인</span>
-                                <h4 class="training-title">
-                                    모두를 위한 피그마 119개 실습으로 완전 정복
-                                </h4>
-                                <h6 class="subtitle">
-                                    개인에서 팀 규모까지 단계별로 40시간 동안 정복하는 올인원 커리큘럼.
-                                </h6>
-                                <p class="disc">FASTCAMPUS</p>
+                        <!-- [e] studies -->
+                        <!-- [s] studies -->
+                        <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="study-slide col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                            <div class="sec-more">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img src="./assets/images/logo/notion_logo.svg" style="min-height: auto;" alt="notion" loading="lazy">
+                                    </div>
+                                    <div class="content">
+                                        <div class="category-info">
+                                            <div class="category-list"><p>Blog</p></div>
+                                            <div class="category-time">
+                                                <i class="ico-clock"></i><span>2025.02</span>
+                                            </div>
+                                        </div>
+                                        <span class="blog-tag">#서비스분석</span>
+                                        <span class="blog-tag">#PainPoint</span>
+                                        <span class="blog-tag">#솔루션</span>
+                                    </div>
+                                </div>
+                                <a class="blog-anchor" href="https://rb.gy/3blbw7" target="_blank">Blog 바로가기</a>
                             </div>
                         </div>
-                    </div>
-
-                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="150" data-aos-once="true"
-                        class="sec-training">
-                        <div class="training-left">
-                            <div class="training-image">
-                                <img src="assets/images/logo/vue_js.png" alt="수업 썸네일" loading="lazy">
-                            </div>
-                            <div class="training-center">
-                                <span class="date">개발</span>
-                                <h4 class="training-title">
-                                    Vue.js - Age of Vue.js
-                                </h4>
-                                <h6 class="subtitle">
-                                    Vue.js로 웹 개발할 수 있도록 기본 개념과 핵심 기능에 대해서 학습하고 구현.
-                                </h6>
-                                <p class="disc">INFLEARN</p>
+                        <!-- [e] studies -->
+                        <!-- [s] studies -->
+                        <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="study-slide col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                            <div class="sec-more">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img src="assets/images/logo/sql_bootcamp.webp" alt="Udemy" loading="lazy">
+                                    </div>
+                                    <div class="content">
+                                        <div class="category-info">
+                                            <div class="category-list"><p>Data</p></div>
+                                            <div class="category-time">
+                                                <i class="ico-clock"></i><span>2024.12 ~ 2025.01</span>
+                                            </div>
+                                        </div>
+                                        <span class="blog-tag">#SQL부트캠프</span>
+                                        <span class="blog-tag">#PostgreSQL</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
+                        <!-- [e] studies -->
+                        <!-- [s] studies -->
+                        <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="study-slide col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                            <div class="sec-more">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img src="assets/images/logo/reverse_planning.jpg" alt="FASTCAMPUS" loading="lazy">
+                                    </div>
+                                    <div class="content">
+                                        <div class="category-info">
+                                            <div class="category-list"><p>PM&#183;PO</p></div>
+                                            <div class="category-time">
+                                                <i class="ico-clock"></i><span>2024.06 ~ 2024.10</span>
+                                            </div>
+                                        </div>
+                                        <span class="blog-tag">#역기획</span>
+                                        <span class="blog-tag">#CaseStudy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [e] studies -->
+                        <!-- [s] studies -->
+                        <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true" class="study-slide col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                            <div class="sec-more">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img src="assets/images/logo/figma_camp.webp" alt="썸네일" loading="lazy">
+                                    </div>
+                                    <div class="content">
+                                        <div class="category-info">
+                                            <div class="category-list"><p>DESIGN</p></div>
+                                            <div class="category-time">
+                                                <i class="ico-clock"></i><span>2022.09 ~ 2022.12</span>
+                                            </div>
+                                        </div>
+                                        <span class="blog-tag">#Tool</span>
+                                        <span class="blog-tag">#Figma</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [e] studies -->
+                        <!-- [s] studies -->
+                        <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" class="study-slide col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                            <div class="sec-more">
+                                <div class="inner">
+                                    <div class="thumbnail">
+                                        <img src="assets/images/logo/vue_js.png" alt="Vue.js" loading="lazy">
+                                    </div>
+                                    <div class="content">
+                                        <div class="category-info">
+                                            <div class="category-list"><p>DEV</p></div>
+                                            <div class="category-time">
+                                                <i class="ico-clock"></i><span>2020.03 ~ 2020.09</span>
+                                            </div>
+                                        </div>
+                                        <span class="blog-tag">#Framework</span>
+                                        <span class="blog-tag">#Vue.js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [e] studies -->
+                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- [e] Training -->
+        </div>
+        <!-- [s] Study  -->
 
         <!-- [s] Contact -->
         <div class="bumper seperator" id="contact">
@@ -919,27 +1010,22 @@
                                         <div class="user-info-top">
                                             <div class="user-info-header">
                                                 <h2 class="title">
-                                                    Yeji Cho
+                                                    Cho Yeji
                                                     <!-- <span class="pl--15">Assistant Manager</span> -->
                                                 </h2>
-                                                <p class="disc">궁금하신 점이나 추가로 확인이 필요한 사항이 있으시면, 아래 연락처로 편하게 연락 주세요. 확인 후 답변드리겠습니다.</p>
+                                                <p class="disc">궁금하신 점이나 추가로 확인이 필요한 사항이 있으시면, <br>아래 연락처로 연락 주세요. 확인 후 답변드리겠습니다.</p>
                                             </div>
                                             <div class="user-info-footer">
-                                                <div class="info" title="working time">
-                                                    <img src="assets/images/icons/ico_career.svg" alt="주거지역"
-                                                        style="margin-right: 15px;">
-                                                    <span>9 AM - 6 PM, Weekdays</span>
-                                                </div>
                                                 <div class="info">
                                                     <a href="https://www.linkedin.com/in/yezicho/" target="_blank">
                                                         <img src="assets/images/icons/ico_linkedin.svg" alt="">
-                                                        <span>yezicho</span>
+                                                        <span>LinkedIn</span>
                                                     </a>
                                                 </div>
                                                 <div class="info">
-                                                    <a href="https://open.kakao.com/o/spzqm3Gf" target="_blank">
-                                                        <img src="assets/images/icons/ico_katalk.svg" alt="">
-                                                        <span>오픈카톡</span>
+                                                    <a href="https://open.kakao.com/o/sFXoiH8d" target="_blank">
+                                                        <img src="assets/images/icons/ico_chat.svg" alt="">
+                                                        <span>KakaoTalk</span>
                                                     </a>
                                                 </div>
                                                 <div class="info">
@@ -1077,8 +1163,11 @@
                             : ''
                         }
 
-                        <p><b>${index++}. 주요 성과 및 결과</b></p>
-                        ${renderList(project.results)}
+                        ${
+                        project.results && project.results.length > 0
+                            ? `<p><b>${index++}. 주요 성과 및 결과</b></p>${renderList(project.results)}`
+                            : ''
+                        }
 
                         <p class="mb--30"><b>${index++}. 회고</b>${project.reflection}</p>
 

@@ -25,9 +25,11 @@
 			this.enableStickyHeader();
 			this.enableSmoothScroll();
 			this.blogActivation();
+			this.studyListSlide();
 			this.activateWOW();
 			this.activateAOS();
 			this.pageNavigation();
+			this.handleModalScrollLock();
 		},
 
 		activateWOW: function () {
@@ -88,16 +90,56 @@
 		},
 
 		blogActivation: function () {
+			const slideCount = $('.blog-activation .blog').length;
 			$('.blog-activation').slick({
 				infinite: true,
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				dots: true,
+				dots: slideCount > 1,
 				arrows: true,
 				adaptiveHeight: true,
 				cssEase: 'linear',
 				prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
 				nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
+			});
+		},
+
+		studyListSlide: function () {
+			const slideCount = $('.study-wrapper .study-slide').length;
+			$('.study-wrapper').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: true,
+                cssEase: 'linear',
+                adaptiveHeight: true,
+                prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
+                nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
+                responsive: [{
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: true,
+                            arrows: false,
+                        }
+                    }
+                ]
 			});
 		},
 
@@ -118,6 +160,24 @@
 				}.bind(this),
 			});
 		},
+
+		handleModalScrollLock: function () {
+			const observer = new MutationObserver((mutations) => {
+				mutations.forEach((mutation) => {
+					const modalIsOpen = this.body.classList.contains('modal-open');
+					if (modalIsOpen) {
+						this.html.classList.add('modal-open');
+					} else {
+						this.html.classList.remove('modal-open');
+					}
+				});
+			});
+		
+			observer.observe(this.body, {
+				attributes: true,
+				attributeFilter: ['class'],
+			});
+		}
 	};
 
 	myMain.initialize();
